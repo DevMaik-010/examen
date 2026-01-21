@@ -95,11 +95,46 @@ const Prueba = () => {
   };
 
   return (
-    <div className="min-h-screen p-6 md:p-8 flex flex-col items-center">
-      {/* Container centrado */}
-      <div className="w-full max-w-4xl">
-        {/* Header */}
-        <div className="flex justify-between items-start mb-8">
+    <div className="min-h-screen p-6 md:p-8 flex justify-center">
+      {/* Timer Fixed Sidebar */}
+      <div className="hidden lg:block fixed right-8 top-1/2 -translate-y-1/2 z-50">
+        <div className="timer-box w-72">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-xl">⏱️</span>
+            <span className="timer-display">
+              {formatearTiempo(tiempoRestante)}
+            </span>
+          </div>
+          <div className="timer-progress-bar">
+            <div
+              className="timer-progress-fill"
+              style={{ width: `${tiempoProgreso}%` }}
+            ></div>
+          </div>
+          <p
+            className="text-sm texto mt-2"
+            style={{ color: "var(--text-secondary)" }}
+          >
+            Tiempo Total: 120 minutos
+          </p>
+        </div>
+      </div>
+
+      {/* Mobile Timer */}
+      <div className="lg:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
+        <div className="timer-box px-6 py-3">
+          <div className="flex items-center gap-2">
+            <span className="text-lg">⏱️</span>
+            <span className="timer-display text-lg">
+              {formatearTiempo(tiempoRestante)}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content Container */}
+      <div className="w-full max-w-4xl space-y-8 lg:mr-80">
+        <div className="flex justify-between items-start">
           <div>
             <h1
               className="text-3xl font-bold texto2"
@@ -115,28 +150,7 @@ const Prueba = () => {
             </p>
           </div>
 
-          {/* Timer */}
-          <div className="timer-box">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-xl">⏱️</span>
-              <span className="timer-display">
-                {formatearTiempo(tiempoRestante)}
-              </span>
-            </div>
-            {/* Progress Bar */}
-            <div className="timer-progress-bar">
-              <div
-                className="timer-progress-fill"
-                style={{ width: `${tiempoProgreso}%` }}
-              ></div>
-            </div>
-            <p
-              className="text-sm texto mt-2"
-              style={{ color: "var(--text-secondary)" }}
-            >
-              Tiempo Total: 120 minutos
-            </p>
-          </div>
+          {/* Timer moved to sidebar */}
         </div>
 
         {/* Navigation Buttons Top */}
@@ -206,7 +220,7 @@ const Prueba = () => {
 
         {/* Question Navigator */}
         <div className="question-card mb-8">
-          <div className="grid grid-cols-10 gap-2 mb-6">
+          <div className="flex overflow-x-auto gap-2 mb-6 pb-2">
             {Array.from({ length: 100 }, (_, i) => {
               const qIndex = i;
               const isAnswered = respuestas[qIndex] !== undefined;
@@ -217,7 +231,7 @@ const Prueba = () => {
                 <button
                   key={i}
                   onClick={() => irAPregunta(qIndex)}
-                  className={`question-nav-btn ${isCurrent ? "current" : ""} ${isAnswered ? "answered" : ""} ${isMarked ? "marked" : ""}`}
+                  className={`question-nav-btn shrink-0 ${isCurrent ? "current" : ""} ${isAnswered ? "answered" : ""} ${isMarked ? "marked" : ""}`}
                 >
                   {qIndex + 1}
                   {isMarked && <span className="marked-dot">•</span>}
@@ -261,35 +275,39 @@ const Prueba = () => {
           </div>
 
           {/* Bottom Actions */}
-          <div className="flex gap-4 flex-wrap justify-center">
-            <button
-              onClick={() => irAPregunta(preguntaActual - 1)}
-              disabled={preguntaActual === 0}
-              className="nav-btn nav-btn-outline"
-            >
-              ← ANTERIOR
-            </button>
-            <button onClick={marcarPregunta} className="nav-btn nav-btn-mark">
-              🚩 MARCAR
-            </button>
-            <button
-              onClick={finalizarPrueba}
-              className="nav-btn nav-btn-finish"
-            >
-              ✓ FINALIZAR PRUEBA
-            </button>
-            <button
-              onClick={() => irAPregunta(preguntaActual + 1)}
-              disabled={preguntaActual === totalPreguntas - 1}
-              className="nav-btn nav-btn-primary"
-            >
-              SIGUIENTE →
-            </button>
-          </div>
+
+        </div>
+
+        {/* Bottom Actions */}
+        <div className="flex gap-4 flex-wrap justify-center">
+          <button
+            onClick={() => irAPregunta(preguntaActual - 1)}
+            disabled={preguntaActual === 0}
+            className="nav-btn nav-btn-outline"
+          >
+            ← ANTERIOR
+          </button>
+          <button onClick={marcarPregunta} className="nav-btn nav-btn-mark">
+            🚩 MARCAR
+          </button>
+          <button
+            onClick={finalizarPrueba}
+            className="nav-btn nav-btn-finish"
+          >
+            ✓ FINALIZAR PRUEBA
+          </button>
+          <button
+            onClick={() => irAPregunta(preguntaActual + 1)}
+            disabled={preguntaActual === totalPreguntas - 1}
+            className="nav-btn nav-btn-primary"
+          >
+            SIGUIENTE →
+
+          </button>
         </div>
 
         {/* Footer Stats */}
-        <div className="text-center mb-8">
+        <div className="text-center">
           <p
             className="texto text-lg"
             style={{ color: "var(--text-secondary)" }}
@@ -304,13 +322,13 @@ const Prueba = () => {
             </span>
           </p>
         </div>
+
+        {/* Atajos */}
+        <button className="atajos-btn">☰ Atajos</button>
+
+        {/* Theme Toggle */}
+        <ThemeToggle className="theme-toggle" />
       </div>
-
-      {/* Atajos */}
-      <button className="atajos-btn">☰ Atajos</button>
-
-      {/* Theme Toggle */}
-      <ThemeToggle className="theme-toggle" />
     </div>
   );
 };
