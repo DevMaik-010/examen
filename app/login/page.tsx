@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -17,6 +17,13 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
+
+  useEffect(() => {
+    const examStatus = localStorage.getItem("exam_status");
+    if (examStatus === "finalizado") {
+      router.push("https://admision01.dgfm.minedu.gob.bo/");
+    }
+  }, [router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,6 +55,7 @@ export default function LoginPage() {
 
       // Guardar en localStorage para referencia
       localStorage.setItem("exam_user", username);
+      localStorage.setItem("exam_status", "iniciado");
 
       setLoading(false);
       router.push("/instrucciones");

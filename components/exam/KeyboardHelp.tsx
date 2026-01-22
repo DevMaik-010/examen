@@ -102,7 +102,6 @@ export function KeyboardHelp() {
           gap: 0.5rem;
           padding: 0.75rem 1.25rem;
           background: var(--bg-card);
-          border: 2px solid var(--text-accent);
           border-radius: 12px;
           color: var(--text-primary);
           font-family: var(--font-fira-code), monospace;

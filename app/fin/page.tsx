@@ -12,20 +12,26 @@ export default function FinPage() {
   const router = useRouter();
 
   useEffect(() => {
+    // Verificar si el examen ya fue finalizado
+    const examStatus = localStorage.getItem("exam_status");
+    if (examStatus === "finalizado") {
+      router.push("https://admision01.dgfm.minedu.gob.bo/");
+      return;
+    }
+
     // Limpiar datos del examen cuando se completa
     localStorage.removeItem("exam_in_progress");
     localStorage.removeItem("exam_current_index");
-  }, []);
+  }, [router]);
 
   const handleLogout = () => {
-    // Limpiar todo y volver a instrucciones
-    localStorage.removeItem("exam_results");
-    localStorage.removeItem("exam_user_answers");
-    localStorage.removeItem("exam_flagged_questions");
-    localStorage.removeItem("exam_start_time");
-    localStorage.removeItem("exam_in_progress");
-    localStorage.removeItem("exam_tiempo_restante");
-    router.push("/instrucciones");
+    // Marcar examen como finalizado antes de limpiar
+    
+    // Limpiar todo el localStorage y volver a la página principal
+    localStorage.clear();
+    router.push("https://admision01.dgfm.minedu.gob.bo/");
+    
+    localStorage.setItem("exam_status", "finalizado");
   };
 
   return (
@@ -49,7 +55,7 @@ export default function FinPage() {
           Gracias por tu participación, <strong>cierra tu sesión</strong> para
           resguardar tu Información.
         </p>
-        <button className="logout-btn" onClick={handleLogout}>
+        <button className="logout-btn border top-6 right-6 absolute" onClick={handleLogout}>
           🚪 Cerrar Sesión
         </button>
         <style jsx>{`
@@ -63,20 +69,19 @@ export default function FinPage() {
             }
           }
           .logout-btn {
-            margin-top: 1.5rem;
-            padding: 0.75rem 1.5rem;
-            background: rgba(255, 50, 50, 0.1);
-            border: 1px solid rgba(255, 50, 50, 0.3);
+            padding: 0.5rem 1rem;
+            background: var(--bg-error);
+            border: 0,7px solid #ff6b6b;
             border-radius: 8px;
             color: #ff6b6b;
+            font-size: 0.85rem;
+            font-weight: semibold;
             cursor: pointer;
-            font-family: "Fira Code", monospace;
-            font-size: 1rem;
             transition: all 0.3s ease;
+            
           }
           .logout-btn:hover {
-            background: rgba(255, 50, 50, 0.2);
-            transform: scale(1.05);
+            background: rgba(255, 107, 107, 0.15);
           }
         `}</style>
       </div>

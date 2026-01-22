@@ -1,0 +1,3602 @@
+[
+    {
+        "id": "725b584a-abf0-4afc-96d1-2fa09b919dc6",
+        "enunciado": "En genética, los cambios en el material hereditario pueden tener distintas consecuencias para\nlos organismos y las poblaciones. En este contexto, ¿por qué las mutaciones cumplen un papel\nimportante en los procesos biológicos?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Porque generan variabilidad genética, base sobre la cual actúan procesos evolutivos como la selección natural",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Porque siempre producen organismos más aptos, asegurando adaptación inmediata en una sola generación",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Porque eliminan la variabilidad genética al corregir cambios del ADN durante la reproducción",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Porque ocurren únicamente por acción humana y no se presentan de forma espontánea en la naturaleza",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Las mutaciones son cambios en la secuencia del ADN que pueden producirse de forma espontánea o como\nresultado de factores ambientales. Aunque algunas mutaciones pueden ser neutras o incluso desfavorables, su\nimportancia biológica radica en que generan variabilidad genética dentro de las poblaciones. Esta variabilidad\nconstituye la base sobre la cual actúan los procesos evolutivos, como la selección natural, permitiendo que los\norganismos se adapten a cambios en el ambiente a lo largo del tiempo. Sin mutaciones, no existirían nuevas\ncaracterísticas heredables, lo que limitaría la capacidad de las especies para evolucionar y responder a las\ncondiciones cambiantes del entorno.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Biología"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 18,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "9097c8f7-95bc-485b-9dad-f9cf855441f9",
+        "enunciado": "En la célula, los distintos orgánulos cumplen funciones específicas que permiten su funcionamiento\ny supervivencia. En este contexto, ¿cuál es la función principal de la mitocondria dentro de la célula?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Transformar nutrientes mediante respiración celular para obtener energía utilizable en forma de ATP",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Transformar nutrientes mediante fotosíntesis para obtener energía química, almacenándola principalmente en glucosa",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Dirigir la síntesis de proteínas al albergar el ADN y separar transcripción y traducción en compartimentos distintos",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Almacenar y liberar energía sin reacciones de oxidación, evitando el uso de nutrientes orgánicos como fuente energética",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La mitocondria es el orgánulo responsable de llevar a cabo la respiración celular, un conjunto de reacciones\nquímicas mediante las cuales la célula transforma los nutrientes en energía utilizable en forma de ATP (adenosín\ntrifosfato). Este proceso implica la oxidación de moléculas orgánicas y la liberación de energía que se almacena\ntemporalmente en los enlaces del ATP. La energía producida es esencial para el desarrollo de todas las actividades\ncelulares, como la síntesis de sustancias, el transporte activo, el movimiento celular y la regulación metabólica.\nPor esta razón, la mitocondria es considerada la “central energética” de la célula, y su adecuado funcionamiento\nresulta indispensable para la supervivencia y el correcto desempeño de los organismos vivos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Biología"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 3,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "82e995e6-d7a8-4ed3-9731-39cb02c93bd4",
+        "enunciado": "La matemática es considerada una herramienta fundamental para el desarrollo de las ciencias\nnaturales y sociales, ya que permite modelar fenómenos y analizar datos. Desde una perspectiva\ngeneral, ¿por qué la matemática es esencial para la ciencia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Porque permite representar fenómenos, formular leyes y hacer predicciones mediante modelos y lenguajes",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Porque reemplaza la experimentación y demuestra hechos sin necesidad de observar la realidad",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Porque solo se aplica a la física y no tiene utilidad en ciencias sociales o económicas",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Porque se basa únicamente en datos medidos y no utiliza estructuras ni razonamientos abstractos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La matemática proporciona lenguajes, modelos y estructuras que permiten representar fenómenos reales,\nformular leyes y realizar predicciones. En física, economía y otras ciencias, las relaciones matemática son\nfundamentales para comprender la realidad. No sustituye la experimentación, sino que la complementa.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Matemática"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 19,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "16991bfa-b409-4e14-8fbd-3a56aae195f7",
+        "enunciado": "En el estudio del aprendizaje, la Psicología distingue diferentes formas de adquisición de conductas.\nCuando una conducta se fortalece porque va seguida de una consecuencia positiva, se está aplicando\nel principio de:",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Reforzamiento, porque las consecuencias positivas aumentan la probabilidad de repetición",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Castigo, porque reduce la conducta al asociarla a una consecuencia negativa",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Extinción, porque debilita una conducta al retirar consecuencias que la mantenían",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Condicionamiento clásico, porque depende de la asociación entre estímulos y no de consecuencias",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El reforzamiento es un principio central del conductismo y explica cómo las consecuencias influyen en la\nprobabilidad de que una conducta se repita. Cuando una conducta es seguida de una consecuencia positiva\n—como una recompensa, reconocimiento o resultado satisfactorio— aumenta la probabilidad de que vuelva\na ocurrir. Este principio permite comprender cómo el ambiente moldea el comportamiento humano y resulta\nespecialmente relevante en contextos educativos, donde las respuestas del entorno influyen en la motivación y\nen la adquisición de hábitos de estudio, siempre que su uso sea reflexivo y no mecánico.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Psicologia"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 14,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "8318f605-53b2-4f3f-ada3-cbf696b41b91",
+        "enunciado": "En la construcción de un texto escrito, no solo es importante que las ideas estén organizadas de manera lógica, sino también que exista una adecuada conexión lingüística entre sus distintas partes. En este marco, ¿mediante qué recursos se logra principalmente la cohesión textual, entendida como el enlace formal entre palabras, oraciones y párrafos?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Conectores, pronombres, referencias y elipsis que enlazan formalmente el discurso.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "La unidad temática sostenida sin cambios de asunto a lo largo de todo el texto.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La presencia de oraciones cortas y repetidas para asegurar que el lector no se pierda.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "El uso exclusivo de un mismo tiempo verbal para mantener uniforme la narración.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La cohesión textual se refiere al conjunto de mecanismos lingüísticos que permiten establecer relaciones\nformales entre los distintos elementos de un texto, garantizando su continuidad y fluidez. Entre estos recursos\nse encuentran los conectores (que expresan relaciones lógicas como causa, consecuencia u oposición), los\npronombres y referencias (que evitan repeticiones innecesarias), así como la elipsis y otros procedimientos\ngramaticales. Gracias a estos mecanismos, las oraciones y párrafos se articulan de manera adecuada, facilitando\nla comprensión del mensaje por parte del lector. La cohesión no depende de la cantidad de texto ni de la repetición\nexcesiva, sino del uso correcto y pertinente de estos recursos, que permiten que el discurso se perciba como una\nunidad estructurada y coherente.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Lenguaje"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 16,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "dc752dc5-238a-4d1d-94c0-d32f0c3c968c",
+        "enunciado": "En el marco de las transformaciones educativas impulsadas durante la década de 1990, el Estado\nboliviano implementó en 1994 una reforma orientada a responder a las características sociales,\nculturales y lingüísticas del país. Desde una perspectiva histórico-educativa, ¿cuál fue el eje central\nque estructuró esta reforma y redefinió el enfoque del sistema educativo nacional?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Reconocimiento de la diversidad cultural y lingüística, con educación intracultural, intercultural y bilingüe",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Homogeneización curricular exclusiva en castellano, dejando de lado lenguas originarias para unificar identidad",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Privatización total del sistema educativo y eliminación de contenidos vinculados a identidades culturales",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sustitución del enfoque educativo por formación solo técnica, sin cambios en inclusión, equidad ni diálogo cultural",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La reforma educativa de 1994 incorporó como eje central el reconocimiento de la diversidad cultural y lingüística\ndel país, estableciendo la educación intracultural, intercultural y bilingüe como fundamento del sistema educativo.\nEste enfoque buscó superar modelos homogenizantes que habían invisibilizado a las naciones y pueblos indígena\noriginarios, promoviendo el uso y la valoración de las lenguas originarias junto al castellano, así como el respeto\na las identidades culturales. La reforma planteó una educación más pertinente al contexto social y cultural de\nlos estudiantes, orientada a fortalecer la inclusión, la equidad y el diálogo entre culturas. En este sentido, el eje\nintercultural no solo implicó un cambio curricular, sino una redefinición del sentido de la educación como espacio\nde reconocimiento de la pluralidad y de construcción de cohesión social en el Estado boliviano.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": "Historia"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 20,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "14081ce7-9cbd-4784-8284-1c15bdcf61bc",
+        "enunciado": "En el análisis de los textos escritos, no solo es importante la corrección gramatical, sino también la forma en que las ideas se organizan y se relacionan entre sí para construir un sentido global. En este marco, ¿a qué aspecto del texto hace referencia el concepto de coherencia textual?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La unidad temática y la relación lógica entre ideas para construir un sentido global.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "El uso de conectores, pronombres y elipsis para enlazar oraciones sin repeticiones.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La corrección ortográfica y el respeto estricto de las normas de puntuación del idioma.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La presencia de párrafos largos que desarrollan un tema con abundantes ejemplos.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La coherencia textual se refiere a la organización lógica y significativa de las ideas que conforman un texto,\nde modo que estas se articulen de manera comprensible para el lector y mantengan una unidad temática. Un\ntexto coherente presenta una secuencia clara de ideas, en la que cada parte se relaciona con el tema central y\ncontribuye al desarrollo del sentido global. Este aspecto no depende únicamente de la corrección gramatical o del\nuso adecuado de la puntuación, sino de la planificación del contenido y de la progresión temática. Sin coherencia,\nel texto puede resultar confuso o contradictorio, aun cuando sus oraciones estén bien construidas desde el punto\nde vista lingüístico, lo que evidencia la importancia de este concepto en la producción y comprensión de textos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Lenguaje"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 9,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "3496f069-42bb-43d4-8d6f-57f2116bfd0c",
+        "enunciado": "¿Cuál es la característica principal del enlace iónico que permite distinguirlo de otros tipos de\nenlace?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La transferencia de electrones que forma iones opuestos unidos por atracción electrostática",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "La compartición de pares de electrones entre átomos para completar la capa de valencia",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La unión de átomos idénticos mediante un “mar” de electrones deslocalizados",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La formación de un enlace por interacción de núcleos sin participación de electrones de valencia",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El enlace iónico se produce cuando un átomo cede electrones y otro átomo los acepta, dando lugar a la formación\nde iones con cargas eléctricas opuestas. Este tipo de enlace ocurre generalmente entre metales y no metales,\ndebido a la diferencia en su tendencia a perder o ganar electrones. La atracción electrostática entre los iones\nde carga contraria es la fuerza que mantiene unido al compuesto, originando estructuras sólidas cristalinas con\npropiedades físicas características, como elevada estabilidad y altos puntos de fusión.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Química"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 7,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "5e1aa269-75df-40bc-938c-a45f4db03207",
+        "enunciado": "En el estudio de la Química orgánica, considerando la estructura y composición de las sustancias\nque forman parte de este campo, ¿cuál es la característica principal que permite identificar a los\ncompuestos orgánicos?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Presentan principalmente enlaces entre átomos de carbono e hidrógeno",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Se caracterizan por estar formados solo por oxígeno e hidrógeno en su estructura",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Se identifican porque siempre son compuestos iónicos con redes cristalinas",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Se distinguen porque no pueden formar cadenas y solo generan moléculas simples",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los compuestos orgánicos se caracterizan principalmente por la presencia de enlaces entre átomos de carbono e\nhidrógeno, lo que constituye el rasgo distintivo de la Química orgánica. El carbono posee la capacidad de formar\nenlaces estables consigo mismo y con otros elementos, lo que permite la existencia de una gran diversidad de\nestructuras moleculares, desde cadenas simples hasta compuestos complejos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Química"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 14,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "896e39aa-9025-49f4-807f-5e0ef9133c94",
+        "enunciado": "En física, la aceleración es una magnitud fundamental para describir el movimiento. ¿Qué expresa\ncorrectamente el concepto de aceleración?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La aceleración mide la variación de la velocidad con respecto al tiempo, ya sea en magnitud, dirección o sentido.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "La aceleración mide la variación de la rapidez con respecto al tiempo, por lo que solo existe si cambia la magnitud de la velocidad.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La aceleración describe la velocidad de un cuerpo en un instante, por lo que depende únicamente del valor de la rapidez.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La aceleración es nula si la rapidez permanece constante, independientemente de si cambia la dirección del movimiento.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La aceleración es una magnitud vectorial que mide la variación de la velocidad con respecto al tiempo, ya sea en magnitud, dirección o sentido. Esto significa que un cuerpo puede estar acelerado, aunque mantenga una rapidez constante si cambia de dirección. La aceleración permite comprender cómo evolucionan los movimientos y es clave para analizar situaciones donde actúan fuerzas.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Física"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 2,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "969051d4-5128-46d7-aa3e-3a2783605ccb",
+        "enunciado": "En los textos narrativos, el tipo de narrador determina la perspectiva desde la cual se cuentan los acontecimientos y condiciona la información a la que accede el lector. En este sentido, ¿cuál es la característica principal que define a la narración en primera persona?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "El narrador participa en la historia y relata desde su experiencia y conocimiento limitado.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "El narrador conoce todos los hechos y pensamientos de los personajes sin restricciones.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "El narrador describe desde fuera con neutralidad absoluta, sin marcas subjetivas.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "El narrador interpela al lector en segunda persona para obligarlo a actuar en el relato.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La narración en primera persona se caracteriza porque el narrador forma parte de la historia que cuenta,\nya sea como protagonista o como testigo de los hechos. Esta perspectiva implica un relato marcado por la \nsubjetividad, ya que los acontecimientos se presentan desde la experiencia, las emociones, las opiniones y el\nconocimiento limitado del narrador. A diferencia del narrador omnisciente, la información que se ofrece al lector\nestá condicionada por lo que el narrador sabe, percibe o recuerda, lo que puede generar mayor cercanía con\nel relato, pero también restricciones en la comprensión global de la historia. Este tipo de narración es frecuente\nen novelas autobiográficas, relatos introspectivos y textos en los que se busca profundizar en la dimensión\npsicológica de los personajes.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Lenguaje"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 13,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "896f1a93-6cc2-450e-b3a9-78a53ac45994",
+        "enunciado": "En el estudio de los ecosistemas y de la vida en el planeta, se emplea el concepto de biodiversidad\npara describir la riqueza biológica existente en un determinado espacio o a escala global. En este\ncontexto, ¿a qué se refiere principalmente la biodiversidad?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La variedad de seres vivos, incluyendo diversidad genética, de especies y de ecosistemas",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "La cantidad total de individuos presentes en un ecosistema, sin considerar diferencias entre ellos",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La lista de especies existentes, sin incluir diversidad genética ni diversidad de ecosistemas",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La suma de biomasa producida por los productores en un ambiente durante un periodo determinado",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La biodiversidad se refiere a la variedad de seres vivos que existen en la Tierra y comprende distintos niveles de\norganización biológica, como la diversidad genética, la diversidad de especies y la diversidad de ecosistemas.\nEste concepto no se limita a la cantidad de organismos, sino que abarca la riqueza de formas de vida, sus\ndiferencias y las relaciones que establecen entre sí y con el ambiente. La biodiversidad es fundamental para\nel equilibrio ecológico y la estabilidad de los ecosistemas, ya que favorece la resiliencia frente a cambios\nambientales, contribuye al funcionamiento de los sistemas naturales y sostiene procesos esenciales para la vida,\ncomo la producción de alimentos y la regulación del clima.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": "Biología"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 17,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "8dab2415-10e4-4846-9ad4-9416201b0950",
+        "enunciado": "La Guerra del Pacífico marcó un punto de inflexión en la historia boliviana, con consecuencias que\nperduran hasta la actualidad. ¿Cuál fue su impacto estructural más significativo?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Reconfiguración territorial y geopolítica que condicionó acceso a recursos y proyección económica del país",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Industrialización inmediata del país por sustitución de importaciones y expansión sostenida del mercado interno",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Recuperación de fronteras y fortalecimiento del control sobre espacios estratégicos tras el desenlace del conflicto",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Estabilidad política duradera y consolidación institucional sin tensiones diplomáticas regionales posteriores",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El conflicto generó transformaciones profundas y duraderas en la configuración territorial del país, al modificar\nfronteras, redefinir espacios estratégicos y consolidar pérdidas o reacomodos geopolíticos que trascendieron el\nmomento bélico. Estas alteraciones territoriales no solo afectaron la integridad del Estado, sino que incidieron\ndirectamente en su acceso a recursos naturales, vías de comunicación y zonas de proyección económica,\ncondicionando las posibilidades de desarrollo a mediano y largo plazo. Asimismo, el conflicto reconfiguró las\nrelaciones internacionales, al redefinir alianzas, tensar vínculos diplomáticos y situar al país en una posición\nespecífica dentro del escenario regional e internacional. En este sentido, sus efectos se proyectaron sobre\nla política exterior, orientando prioridades estratégicas, discursos diplomáticos y decisiones de inserción\ninternacional, al tiempo que influyeron en la formulación de políticas económicas y de seguridad, cuyos impactos\nestructurales persistieron más allá del desenlace inmediato del enfrentamiento.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Historia"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 11,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "37cfde5f-8bcf-4c08-af6e-4ca0b35b4bb4",
+        "enunciado": "En el estudio de la Química orgánica, considerando la composición elemental de los compuestos y\nsu clasificación, ¿por qué elementos químicos están formados exclusivamente los hidrocarburos?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Carbono e hidrógeno",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Carbono y oxígeno",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Hidrógeno y oxígeno",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Carbono, nitrógeno y azufre",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los hidrocarburos son compuestos orgánicos formados únicamente por átomos de carbono e hidrógeno, lo que\nlos distingue de otros compuestos orgánicos que incorporan elementos adicionales como oxígeno, nitrógeno o\nazufre. El carbono actúa como el elemento central debido a su capacidad para formar cadenas y estructuras\nvariadas, mientras que el hidrógeno completa la estabilidad de dichas estructuras. Esta composición simple\npermite una amplia diversidad de hidrocarburos, como alcanos, alquenos y alquinos, que constituyen la base de\nnumerosos combustibles y procesos energéticos, desempeñando un papel fundamental en la vida cotidiana y en\nel desarrollo tecnológico.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Química"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 15,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "c8e57355-b895-4d69-aa03-ae0a411d77b4",
+        "enunciado": "Un archivo digital se define como:",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Una estructura organizada de datos almacenada, identificada por un nombre y una extensión",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Un conjunto de componentes físicos que ejecutan instrucciones para procesar información",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Un programa que administra memoria y procesador para coordinar la ejecución de aplicaciones",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Un servicio de internet que permite acceder a contenidos web mediante una dirección URL",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Un archivo digital es una estructura organizada de datos que se almacena en un dispositivo, identificada por un\nnombre y una extensión que indica su tipo. Permite guardar y recuperar información de manera ordenada.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": "Técnica Tecnológica"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 5,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "8cbcb401-a604-4b45-ac7c-57bd7687b2f8",
+        "enunciado": "Tras el proceso independentista, la creación de la República implicó no solo la ruptura con\nel dominio colonial, sino también la construcción de un nuevo orden político y jurídico.\nEste proceso estuvo marcado por continuidades y rupturas respecto al período colonial.\nDesde una perspectiva histórica, la fundación de la República se caracterizó principalmente por:",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Fue liderada por élites criollas y mantuvo exclusiones sociales, configurando inicialmente un Estado oligárquico",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Produjo inclusión plena e inmediata de pueblos indígenas en el poder, eliminando herencias coloniales",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Sustituyó el control criollo por autoridades coloniales, conservando sin cambios la administración imperial",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Convirtió la igualdad jurídica en igualdad real automática, sin persistencia de estructuras sociales excluyentes",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La fundación de la República estuvo liderada por élites criollas que asumieron el control del nuevo Estado. Aunque\nse proclamó la igualdad jurídica, en la práctica se mantuvieron estructuras sociales excluyentes heredadas de\nla colonia. Los pueblos indígenas quedaron marginados de la participación política y del acceso al poder. Este\nproceso evidencia continuidades más que rupturas en las relaciones sociales. Por ello, la República se configuró\ninicialmente como un Estado oligárquico.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Historia"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 8,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "522b6f82-1b37-4ebe-b951-245fdc9f5b1e",
+        "enunciado": "La pendiente de una recta indica cómo varía una magnitud respecto a otra y permite interpretar el\ncomportamiento de una relación funcional.\nSi una recta tiene pendiente negativa, esto significa que:",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Al aumentar la variable independiente, la dependiente disminuye",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Al aumentar la variable independiente, la dependiente también aumenta",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La variable dependiente se mantiene constante aunque cambie la independiente",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La razón de cambio es positiva porque la recta forma un ángulo con el eje horizontal",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La pendiente representa la razón de cambio entre dos variables. Cuando la pendiente es negativa, existe una\nrelación inversa: a medida que aumenta la variable independiente, la dependiente disminuye. Esto se refleja\ngráficamente en una recta descendente. Comprender el significado de la pendiente es clave para interpretar\nfenómenos representados en gráficos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Matemática"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 8,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "94dbc788-94e1-471b-b030-386de7bb5125",
+        "enunciado": "En el estudio del lenguaje, se reconoce que toda comunicación humana implica la transmisión de un mensaje entre interlocutores en un contexto determinado. ¿Cuál es la función del lenguaje que se centra en el contenido del mensaje que se transmite?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Dirigir la atención al receptor y provocar una respuesta inmediata.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Transmitir datos o hechos, priorizando el contenido y el contexto referidos.",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Manifestar sentimientos o actitudes del emisor frente a lo que comunica.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Mantener abierto el canal de comunicación sin aportar información relevante.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La función referencial del lenguaje se orienta a informar, describir o explicar hechos de la realidad de manera\nobjetiva. Su propósito principal es transmitir información clara y verificable, por lo que predomina en textos\ninformativos, científicos y expositivos. Desde la lingüística, esta función se reconoce cuando el énfasis recae en\nel mensaje y su relación con el contexto.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Lenguaje"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 1,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "cfbd0e08-84fe-4936-aaf9-19624d117c40",
+        "enunciado": "En el estudio de los circuitos eléctricos, la ley de Ohm permite comprender cómo se relacionan las\nprincipales magnitudes eléctricas. ¿Entre cuáles de las siguientes variables establece relación esta\nley?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Voltaje, corriente eléctrica y resistencia, relacionados por la ecuación V = I⋅R",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Voltaje, potencia y energía, relacionados porque la resistencia determina la energía total",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Corriente, carga eléctrica y tiempo, relacionados porque el voltaje depende del tiempo de paso",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Resistencia, masa y aceleración, relacionados porque las cargas se mueven como cuerpos mecánicos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La ley de Ohm establece que la corriente eléctrica que circula por un conductor es directamente proporcional\nal voltaje aplicado e inversamente proporcional a la resistencia del material, relación que se expresa mediante\nla ecuación V = I⋅R. Desde la Física, esta ley permite explicar cómo el voltaje impulsa el movimiento de las\ncargas eléctricas, mientras que la resistencia se opone a dicho movimiento. Su aplicación es fundamental para el\nanálisis de circuitos eléctricos simples, ya que posibilita calcular una magnitud cuando se conocen las otras dos\ny comprender el comportamiento de los dispositivos eléctricos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Física"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 15,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "2b22d891-03a1-4456-8448-1056b23afd47",
+        "enunciado": "¿Cómo se clasifica el sonido según el tipo de vibración de las partículas del medio?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Onda mecánica longitudinal: requiere medio y las partículas vibran en la misma dirección de propagación",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Onda mecánica transversal: requiere medio y las partículas vibran perpendicularmente a la propagación",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Onda electromagnética longitudinal: no requiere medio y genera compresión y rarefacción en el vacío",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Onda electromagnética transversal: requiere medio material para transmitirse en aire, líquidos o sólidos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El sonido es una onda mecánica longitudinal, ya que requiere un medio material para propagarse y las partículas \nde dicho medio vibran en la misma dirección en la que avanza la onda. Este movimiento produce regiones\nalternadas de compresión y rarefacción, que se transmiten a través del aire, los líquidos o los sólidos. Desde\nla Física, esta característica permite diferenciar al sonido de las ondas electromagnéticas y explica fenómenos\ncomo la propagación del sonido en distintos medios y su imposibilidad de transmitirse en el vacío.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Física"
+        },
+        "componentes": {
+            "nombre": "Conocimientos Generales"
+        },
+        "num_pregunta": 18,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "28f7fb63-f269-4cb7-a0db-733b4b03af77",
+        "enunciado": "En una serie de números cada término se obtiene sumando al número anterior la cantidad de unidades\nque incrementa su posición (es decir, al primer término se le añade 1, al segundo 2, al tercero 3, etc.).\nLa serie comienza así: 2, 6, 12, 20, … ¿Cuál es el siguiente número de la secuencia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "28",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "30",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "32",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "36",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para hallar el patrón, observemos las diferencias entre términos consecutivos: 6-2 = 4, 12-6 = 6, 20-12 = 8. Estas\ndiferencias aumentan de dos en dos (4, 6, 8,…). Por lo tanto, la siguiente diferencia será 10. Sumando 10 al\núltimo término conocido (20) obtenemos 20 + 10 = 30. Así, el número que sigue en la secuencia es 30.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 68,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "34a10783-5c41-4ba9-82a4-561fbaba6860",
+        "enunciado": "Una Unidad Educativa organizará una visita a un museo para 274 estudiantes. Cada autobús disponible\ntiene capacidad para 48 estudiantes. ¿Cuál es el número mínimo de autobuses que la Unidad Educativa\ndebe contratar para que todos los estudiantes viajen juntos?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "5",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "6",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "7",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "8",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para determinar el número mínimo de autobuses, se divide el total de estudiantes entre la capacidad de cada\nautobús: 274 ÷ 48 = 5,7083… La parte entera indica que 5 autobuses llenan 5 × 48 = 240 estudiantes, dejando\n274 – 240 = 34 estudiantes sin transporte. Como cualquier grupo restante, por pequeño que sea, necesita otro\nautobús, se debe redondear hacia arriba la fracción obtenida, usando la función techo. Por lo tanto, se requieren\n5 + 1 = 6 autobuses.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 267,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "9a08ca4a-8f7b-4a8c-b42a-f53f7950e559",
+        "enunciado": "Una escuela organizó una venta de boletos durante cinco días consecutivos. Cada día se vendieron al\nmenos 80 boletos y, además, cada día posterior se vendieron 10 boletos más que el día anterior. Si al\nfinal de la semana se vendieron en total 480 boletos, ¿cuántos boletos se vendieron en el tercer día?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "86",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "90",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "96",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "100",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Sea x la cantidad de boletos vendidos el primer día. Entonces se venden x + 10 el segundo día, x + 20 el tercero,\nx + 30 el cuarto y x + 40 el quinto. La suma total es: [ x + (x+10) + (x+20) + (x+30) + (x+40) = 5x + 100. ] Se sabe\nque esta suma es 480, por lo que 5x + 100 = 480 → 5x = 380 → x = 76. Así, el tercer día se vendieron x + 20 =\n76 + 20 = 96 boletos. La opción correcta es 96.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 227,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "c132b457-109a-4d1b-bc99-923752581521",
+        "enunciado": "Una escuela necesita comprar lápices para sus estudiantes. Cada paquete contiene 8 lápices y la\nescuela compra 12 paquetes. ¿Cuántos lápices tendrá en total?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "80",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "88",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "96",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "104",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para resolver el problema se debe descomponer la información: cada paquete tiene 8 lápices y se compran 12\npaquetes. El número total de lápices se obtiene multiplicando la cantidad de paquetes por la cantidad de lápices\npor paquete (12 × 8). Al efectuar la multiplicación se obtiene 96, por lo que la escuela tendrá 96 lápices en\ntotal. Este razonamiento muestra cómo identificar la relación multiplicativa entre los datos y aplicar la operación\nadecuada.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 201,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "91aa10b6-8acb-4096-a072-3972904bbce4",
+        "enunciado": "En una escuela se dispone una fila de sillas para los estudiantes en la siguiente forma: la primera fila\ntiene 2 sillas, la segunda fila tiene 5, la tercera fila tiene 10 y la cuarta fila tiene 17. ¿Cuántas sillas debe\ncontener la quinta fila para que el número de sillas continúe la misma lógica?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "24",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "25",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "26",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "27",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los números de sillas forman la secuencia 2, 5, 10, 17. Observando las diferencias entre términos consecutivos\nobtenemos 3, 5 y 7. Estas diferencias aumentan en 2 cada vez (3, 5, 7, …), lo que indica que la siguiente\ndiferencia será 9. Al sumar 9 al último término de la secuencia (17) se obtiene 26. Por lo tanto, la quinta fila debe\ncontener 26 sillas.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 35,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "fc97c14d-b56e-44c0-9f69-391433426c01",
+        "enunciado": "En la resolución de un problema se indica que la suma de dos números es 48 y que el mayor es el doble\ndel menor. Un estudiante obtuvo la solución siguiendo estos pasos: Sea x el menor número. Entonces\nel mayor es 2x. Plantea la ecuación x + 2x = 48. Resuelve: 3x = 48 x = 16. Concluye que los números son\n16 y 32. ¿Cuál de las siguientes afirmaciones acerca del procedimiento y la solución del estudiante es\ncorrecta?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "El procedimiento es incorrecto",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "La solución no cumple la suma",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "El procedimiento y la solución son correctos",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "El mayor no es el doble del menor",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El estudiante definió correctamente la variable x como el menor número y, según el enunciado, el mayor es el\ndoble de ese menor, representado por 2x. Al sumar ambos valores, obtuvo la ecuación x + 2x = 48, que simplifica\na 3x = 48. Resolverla da x = 16, y el mayor número es 2·16 = 32. Sustituyendo, 16 + 32 = 48, cumpliendo ambas\ncondiciones del problema. Por lo tanto, el procedimiento es lógico, las operaciones son correctas y la solución\nencontrada es consistente con el enunciado.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 166,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "ad5b2db9-61c4-4e97-9a9e-ba5a3a58e344",
+        "enunciado": "Una docente debe repartir 84 lápices entre 5 aulas de primaria. Cada aula debe recibir al menos 10\nlápices y se quiere que la diferencia entre la mayor y la menor cantidad entregada sea lo más pequeña\nposible. ¿Cuántos lápices debe recibir la aula que recibe la mayor cantidad?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "16",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "17",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "18",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "20",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Primero se garantiza el mínimo: cada aula recibe 10 lápices, lo que consume 5 × 10 = 50 lápices. Quedan\n84 − 50 = 34 lápices por distribuir. Para minimizar la diferencia entre la mayor y la menor cantidad, se reparten\nesos 34 lápices lo más uniformemente posible. Dividiendo 34 entre 5 aulas se obtiene 6 lápices completos por\naula con un resto de 4 lápices (34 = 5 × 6 + 4). Así, a cada aula se le añaden 6 lápices, y a cuatro de ellas se\nles da un lápiz extra del resto. Cada aula tiene entonces 10 + 6 = 16 lápices como base; cuatro aulas reciben un\nlápiz adicional, pasando a 17. De esta forma una aula recibe 17 lápices (máximo) y otra 16 (mínimo), logrando la\ndiferencia mínima de 1 lápiz.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 130,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "a04eaafc-f175-4ea1-a3f1-9fcbbc761bd7",
+        "enunciado": "En la feria de Ciencias Naturales de la institución educativa se establecieron las siguientes condiciones: 1) Si un proyecto utiliza energía solar, entonces recibe una bonificación de 5 puntos. 2) El proyecto de Carlos no recibió ninguna bonificación. 3) El proyecto de Carlos utilizó energía solar. ¿Cuál de las siguientes afirmaciones es necesariamente verdadera?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "El proyecto de Carlos no utilizó energía solar",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "El proyecto de Carlos recibió la bonificación de 5 puntos",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Ningún proyecto recibió bonificación",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "El proyecto de Carlos recibió menos de 5 puntos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La premisa 1 indica que todo proyecto que usa energía solar obtiene una bonificación de 5 puntos. Según la premisa 3, el proyecto de Carlos utilizó energía solar, por lo tanto, por la lógica del enunciado, Carlos debe haber recibido la bonificación de 5 puntos. La premisa 2 señala que el proyecto de Carlos no recibió ninguna bonificación; esto implica que Carlos no utilizó energía solar, pues de lo contrario habría recibido la bonificación establecida en la premisa 1. Así, la única afirmación que se deduce necesariamente de las condiciones dadas es que el proyecto de Carlos recibió la bonificación de 5 puntos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 271,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "5ac85a6b-c43d-4cb1-83ef-c7d5fc2ed54d",
+        "enunciado": "En una escuela se establecen los siguientes enunciados: 1) Si un docente usa recursos digitales,\nentonces integra tecnología en sus clases. 2) Todos los docentes que integran tecnología logran mayor\ncompromiso estudiantil. 3) Algunos docentes que usan recursos digitales son docentes novatos. ¿Cuál\nde las siguientes conclusiones es lógicamente válida?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Algunos docentes novatos logran mayor compromiso estudiantil",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Ningún docente novato usa recursos digitales",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Todos los docentes son novatos",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Usar tecnología no influye en el compromiso",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "De la premisa (3) sabemos que existen docentes novatos que usan recursos digitales. Según la premisa (1),\nesos docentes que usan recursos digitales integran tecnología en sus clases. A su vez, la premisa (2) indica que\ntodo docente que integra tecnología alcanza mayor compromiso estudiantil. Por lo tanto, los docentes novatos\nque usan recursos digitales también logran mayor compromiso estudiantil. Esta cadena de inferencias valida\nla conclusión: “Algunos docentes novatos logran mayor compromiso estudiantil”. Las demás opciones no se\nderivan de las premisas dadas: la opción B niega lo establecido en (3), la C generaliza sin base y la D invierte\nincorrectamente la relación condicional.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 134,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "d814197f-e41d-40b4-ab72-868f6b7757c2",
+        "enunciado": "Un estudiante resuelve la ecuación 2x + 3 = 11 siguiendo los pasos: (i) resta 3 a ambos lados obteniendo 2x = 8; (ii) divide ambos lados por 2 y escribe x = 4; (iii) verifica sustituyendo x = 4 en la ecuación\noriginal. ¿Cuál de las siguientes afirmaciones es correcta respecto a la solución encontrada?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "x = 4 no satisface la ecuación",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "La división fue incorrecta",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La solución es consistente y correcta",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "La ecuación tiene infinitas soluciones",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Al resolver 2x + 3 = 11, el estudiante realiza correctamente la resta de 3 (2x = 8) y la división por 2 (x = 4). Para\ncomprobar la consistencia, sustituye x = 4 en la ecuación original: 2·4 + 3 = 8 + 3 = 11, que coincide con el lado\nderecho de la ecuación. Por lo tanto, la solución x = 4 es consistente con la ecuación dada. Las demás opciones son incorrectas: la primera afirma un cálculo erróneo (2·4 + 3 = 11, no 12); la tercera dice que hay un error en la\ndivisión, pero la operación es válida; la cuarta niega la unicidad de la solución, pese a que una ecuación lineal de una variable tiene una única solución.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 192,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "109ec9f0-8521-4717-a9b1-3aad3da4527f",
+        "enunciado": "Para resolver la ecuación 3x − 7 = 2, se aplicó una serie de operaciones a ambos lados de la igualdad.\n¿Cuál de las siguientes afirmaciones describe correctamente el procedimiento que preserva la solución\nde la ecuación?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Restar 7 y luego dividir por 3",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Sumar 7 a ambos lados y dividir entre 3",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Dividir primero entre 3",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Restar 2 a ambos lados",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para mantener la igualdad, cualquier operación que se realice debe aplicarse simultáneamente a ambos miembros\nde la ecuación. La forma correcta es primero eliminar el término constante que está restado a la variable: se\nsuma 7 a ambos lados (3x − 7 + 7 = 2 + 7) obteniendo 3x = 9. Luego, se despeja la variable dividiendo por el\ncoeficiente 3 (3x ÷ 3 = 9 ÷ 3), resultando x = 3. Las demás alternativas alteran el orden o la naturaleza de las\noperaciones y, por lo tanto, no conservan la solución original.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 173,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "3a6e44bb-3c80-40b8-8b95-0dd1a8f8338e",
+        "enunciado": "En una serie de fichas numeradas que sigue el patrón de sumar al número anterior la sucesiva cantidad\nde unidades (es decir, el primer término es 2 y al término n-ésimo se le suma n), la sucesión es: 2, 6,\n12, 20, 30, … ¿Cuál es el siguiente número de la serie?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "36",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "40",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "42",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "44",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los términos de la sucesión se obtienen sumando al número anterior un incremento que aumenta en una unidad\ncada paso: 2 = 1·2, 6 = 2·3, 12 = 3·4, 20 = 4·5, 30 = 5·6. En general, el n-ésimo término está dado por n·(n+1).\nPara n = 6 el término es 6·7 = 42. Por lo tanto, el número que sigue en la serie es 42.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 39,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "b3655c28-d924-4e73-9a70-6a848d98d798",
+        "enunciado": "94.En un diseño de mosaico, los motivos se colocan siguiendo la siguiente sucesión: círculo, triángulo,\ncuadrado, círculo, triángulo, ¿qué figura debe aparecer en la sexta posición para que el patrón continúe\nde forma lógica?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "círculo",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "triángulo",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "cuadrado",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "rectángulo",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El patrón observado es una secuencia cíclica de tres figuras que se repiten en el mismo orden: círculo → triángulo \n→ cuadrado → círculo → triángulo → … Por lo tanto, después del segundo triángulo, la figura que corresponde\nsegún la regla es el cuadrado, que completa la tercera posición del ciclo y permite que la sucesión continúe de\nmanera coherente.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 94,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "881bb009-8e64-46bb-b89f-26eeb8d8eb66",
+        "enunciado": "Un agricultor cuenta con 48 metros de alambre para delimitar un terreno rectangular. ¿Cuál de las\nsiguientes dimensiones permite obtener la mayor superficie posible para el terreno?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "8 m × 16 m",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "10 m × 14 m",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "12 m × 12 m",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "6 m × 18 m",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para un rectángulo con perímetro fijo, la superficie máxima se logra cuando el rectángulo es un cuadrado. El\nperímetro disponible es 48 m, por lo que cada lado del cuadrado debe medir 48 m ÷ 4 = 12 m. Así, el área máxima \nes 12 m × 12 m = 144 m². Las demás combinaciones (8 m × 16 m, 10 m × 14 m y 6 m × 18 m) también cumplen\ncon el perímetro de 48 m, pero sus áreas son 128 m², 140 m² y 108 m² respectivamente, menores que la del\ncuadrado.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 265,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "1199f5dc-b9bb-458b-9882-4fc4f35b91b2",
+        "enunciado": "En una escuela se organizó un concurso de matemática. Se saben los siguientes datos: 1) Cada\nclase tiene al menos 20 alumnos. 2) El número total de alumnos que participaron es 180. 3)\nNingún alumno de la clase 5 participó en el concurso. 4) La clase 7 tiene exactamente 25 alumnos.\nCon base en esa información, ¿cuál de las siguientes afirmaciones es necesariamente cierta?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Participaron exactamente 8 clases",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "La clase 7 aportó 25 participantes",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Todas las clases tuvieron al menos 22 participantes",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La clase 5 participó parcialmente",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El dato (4) fija que la clase 7 tiene exactamente 25 alumnos. La única conclusión necesaria (sin suponer nada\nadicional) es que “en la escuela existe una clase (la 7) con 25 alumnos”. Los demás enunciados sobre cuántos\nparticiparon por clase o cuántas clases participaron no se deducen necesariamente solo con la información dada.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 156,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "37c515a8-434b-49e2-82d9-c59a3b9dafb6",
+        "enunciado": "En el patio de la escuela, el docente está colocando filas de bancos siguiendo un patrón: la primera fila\ntiene 2 bancos, la segunda fila 5 bancos, la tercera fila 10 bancos y la cuarta fila 17 bancos. ¿Cuántos\nbancos tendrá la quinta fila si el patrón continúa de la misma manera?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "24",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "25",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "26",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "27",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los números de bancos forman la secuencia 2, 5, 10, 17. Observando las diferencias entre términos consecutivos\nse obtiene: 5-2 = 3, 10-5 = 5, 17-10 = 7. Las diferencias aumentan en 2 unidades cada vez (3, 5, 7, …). Por lo\ntanto, la siguiente diferencia será 9. Sumando 9 al último término (17) se obtiene 17 + 9 = 26. Así, la quinta fila\ndebe contener 26 bancos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 73,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "99230328-6ed7-4739-98c7-a2dbab611d8b",
+        "enunciado": "Observa la siguiente serie numérica: 2, 5, 10, 17, 26, __. ¿Cuál número completa correctamente la\nsecuencia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "35",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "36",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "37",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "38",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para hallar el patrón, calculamos las diferencias entre términos consecutivos: 5-2 = 3, 10-5 = 5, 17-10 = 7, 26-17\n= 9. Las diferencias forman la secuencia de números impares crecientes (3, 5, 7, 9). El próximo número impar es\n11, por lo que la siguiente diferencia debe ser 11. Sumando 11 al último término conocido (26) obtenemos 26 + 11\n= 37. Así, 37 es el número que continúa la serie de manera coherente con el patrón identificado.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 70,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "2bdaa672-9431-4906-b000-225e9a1dd7f4",
+        "enunciado": "En una serie de valores que representa la cantidad de libros que un estudiante lee cada mes, los\nnúmeros son: 3, 8, 15, 24, 35. ¿Cuál será el número de libros que leerá en el sexto mes, si la serie sigue\nel mismo patrón?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "42",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "45",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "48",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "50",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "24‑15 = 9, 35‑24 = 11. Cada incremento aumenta en 2, lo que indica una progresión aritmética de los diferenciales.\nEste comportamiento se corresponde con la fórmula a_n = n^2 + 2n (o bien a_n = n·(n+2)). Verificando: para n=1,\n1·3 = 3; n=2, 2·4 = 8; n=3, 3·5 = 15; n=4, 4·6 = 24; n=5, 5·7 = 35. Por lo tanto, para el sexto mes (n=6) obtenemos\na_6 = 6·8 = 48. Así, la respuesta correcta es 48.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 78,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "c14195ff-8368-497f-be68-4dfa462d3775",
+        "enunciado": "Observa la siguiente sucesión numérica: 5, 9, 17, 33, ___. ¿Cuál es el número que continúa la serie?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "63",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "65",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "67",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "69",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para determinar el patrón, analizamos cómo se obtiene cada término a partir del anterior. 9 = 5 × 2 – 1; 17 = 9\n× 2 – 1; 33 = 17 × 2 – 1. En cada paso el número se multiplica por 2 y luego se le resta 1. Aplicando el mismo\nrazonamiento al último término conocido: 33 × 2 – 1 = 66 – 1 = 65. Por lo tanto, la opción correcta es 65.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 23,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "8cbd061d-907f-4ced-9a82-c500e28485c5",
+        "enunciado": "En una escuela se están organizando actividades grupales. Primero, 144 estudiantes se dividen en\ngrupos de 6 alumnos cada uno. Después, cada grupo se reparte en 3 subgrupos con el mismo número\nde estudiantes. Finalmente, se forman nuevas unidades agrupando 4 subgrupos entre sí. Según este\nprocedimiento, ¿cuántos estudiantes compondrán cada nueva unidad?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "6",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "8",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "10",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "12",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Primero se divide a los 144 estudiantes en grupos de 6, obteniendo 144 ÷ 6 = 24 grupos. Cada uno de esos\ngrupos se reparte en 3 subgrupos iguales, por lo que cada subgrupo contiene 6 ÷ 3 = 2 estudiantes. Finalmente,\nal juntar 4 subgrupos para formar una nueva unidad, esa unidad estará compuesta por 4 × 2 = 8 estudiantes. Las\ndemás opciones provienen de errores comunes: 12 resultaría de multiplicar 2 por 6, 10 no proviene de ninguna\noperación descrita y 6 corresponde al tamaño del grupo original, no al de la unidad final.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 196,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "0513dda6-c98d-42a8-866f-5801df20972a",
+        "enunciado": "En una feria escolar, el stand de experimentos de física vendió 48 boletos y el stand de arte vendió 30\nboletos. Se sabe que el número de boletos vendidos por el stand de física es 1,5 veces el número de\nboletos vendidos por el stand de arte. ¿Cuál de las siguientes afirmaciones describe correctamente la\nrelación entre los boletos vendidos en ambos stands?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "El stand de arte vendió 18 boletos menos que el de física",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "El stand de física vendió el doble",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Vendieron la misma cantidad",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La relación es 1:2",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para verificar la relación, calculamos la diferencia entre los boletos vendidos: 48 (física) – 30 (arte) = 18 boletos.\nPor lo tanto, el stand de arte vendió 18 boletos menos que el de física, lo que coincide con la primera opción. Las\ndemás opciones son incorrectas porque la razón entre los boletos no es 2:1 ni 1:2, y claramente no son iguales.\nEsta conclusión se basa en un razonamiento lógico claro: se extrae la información dada, se realiza la operación\naritmética correspondiente y se compara el resultado con cada alternativa para identificar la que refleja fielmente la relación descrita.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 232,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "0f24e995-8162-4605-b666-19be4dceb588",
+        "enunciado": "Una estudiante registró la cantidad de libros que lee cada mes durante varios meses: 2, 5, 10, 17, 26,\n… ¿Cuántos libros debería leer el mes siguiente si mantiene el mismo patrón?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "35",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "36",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "37",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "38",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para hallar el patrón, observamos las diferencias entre números consecutivos: 5-2 = 3, 10-5 = 5, 17-10 = 7, 26-17\n= 9. Las diferencias forman la serie de números impares crecientes (3, 5, 7, 9…). El siguiente número impar es\n11, por lo que la diferencia esperada es 11. Sumando esta diferencia al último término conocido: 26 + 11 = 37.\nPor lo tanto, la respuesta correcta es 37 libros.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 13,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "010c5876-57ad-4d11-9f07-e526fb65b217",
+        "enunciado": "Un maestro dispone de tres cajas con bolitas. La caja A contiene el doble de bolitas que la caja B. La\ncaja C contiene 5 bolitas menos que la caja A. Si en total hay 35 bolitas en las tres cajas, ¿cuántas\nbolitas hay en la caja B?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "6",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "7",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "8",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "9",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Sea x el número de bolitas en la caja B. Entonces la caja A tiene 2x bolitas y la caja C tiene (2x – 5) bolitas. Según\nel enunciado, la suma total es 35: x + 2x + (2x – 5) = 35. Simplificando: 5x – 5 = 35, de donde 5x = 40 y x = 8.\nPor lo tanto, la caja B contiene 8 bolitas. Esta solución muestra cómo se estableció una ecuación a partir de la\ninformación dada y se resolvió paso a paso, evidenciando un argumento lógico coherente.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Razonamiento Lógico Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 135,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "367e4f3e-f45f-4906-978d-e2a27d1fcb66",
+        "enunciado": "En una escuela se registró que 30 estudiantes practican fútbol, 20 practican baloncesto y 10 practican\nambos deportes. ¿Cuál de las siguientes afirmaciones es necesariamente verdadera?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Hay exactamente 40 estudiantes en total",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Hay al menos 40 estudiantes que practican fútbol o baloncesto",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Todos los estudiantes practican al menos un deporte",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Hay más estudiantes que practican baloncesto que fútbol",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "que practican al menos uno de los dos deportes se calculan con la fórmula de unión de conjuntos: |F ∪ B| = |F|\n+ |B| – |F ∩ B| = 30 + 20 – 10 = 40. Por lo tanto, el número de estudiantes que practican fútbol o baloncesto es,\ncomo mínimo, 40 (puede ser mayor si hay estudiantes que no practican ninguno). La opción que dice “Hay al\nmenos 40 estudiantes que practican fútbol o baloncesto” es la única que se deriva lógicamente de los datos y\nes necesariamente verdadera. Las demás opciones hacen afirmaciones específicas que no se garantizan por la información disponible.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 236,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "a3224d23-ec56-4ebb-8482-e33ce2e2adff",
+        "enunciado": "Una institución educativa dispone de 120 cuadernos y desea repartirlos en partes iguales entre sus\n8 clases. Un estudiante indica diferentes cantidades de cuadernos por clase. ¿Cuál de las siguientes\nopciones representa un resultado coherente con la información dada?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Cada clase recibe 12 cuadernos",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Cada clase recibe 14 cuadernos",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Cada clase recibe 15 cuadernos",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "Cada clase recibe 20 cuadernos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para que la distribución sea coherente, el número de cuadernos por clase multiplicado por la cantidad de clases\ndebe dar el total disponible: 8 × x = 120. Resolviendo, x = 120 ÷ 8 = 15. Por lo tanto, la única respuesta que\ncumple la relación es “Cada clase recibe 15 cuadernos”. Las demás opciones (14, 12 y 20) al multiplicarse\npor 8 no producen 120 (8 × 14 = 112, 8 × 12 = 96, 8 × 20 = 160), evidenciando resultados incoherentes con la\ninformación inicial.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 285,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "0a9661af-520b-4db2-b08c-d4743431ddf1",
+        "enunciado": "En una serie de lecturas de temperatura diaria se registraron los siguientes valores (en grados Celsius):\n2, 5, 9, 14. ¿Cuál es el próximo valor que continuará la regularidad de la serie?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "18",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "19",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "20",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "21",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La serie presenta incrementos crecientes: de 2 a 5 (+3), de 5 a 9 (+4) y de 9 a 14 (+5). Cada paso aumenta en\nuna unidad respecto al incremento anterior. Por lo tanto, el siguiente incremento será +6. Sumando 6 al último\nvalor (14) obtenemos 20. Así, 20 es el número que mantiene la regularidad de la secuencia.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 15,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "cbd54bb1-54db-4ee3-a587-239b67533f3a",
+        "enunciado": "En una fila de fichas, la primera muestra 2 puntos, la segunda 5 puntos, la tercera 12 puntos y la cuarta\n27 puntos. ¿Cuántos puntos tendrá la quinta ficha?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "49",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "54",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "58",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "62",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Observemos las diferencias entre términos consecutivos: 5-2 = 3, 12-5 = 7 y 27-12 = 15. Estas diferencias forman\nla sucesión 3, 7, 15. Cada diferencia se obtiene multiplicando la anterior por 2 y sumando 1 (3×2+1 = 7, 7×2+1 =\n15). Siguiendo la misma regla, la próxima diferencia será 15×2+1 = 31. Sumando esta diferencia al último término\nconocido: 27 + 31 = 58. Por lo tanto, la quinta ficha mostrará 58 puntos.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 51,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "c5f22b84-b606-47a9-88c4-ae12c2d9d3ef",
+        "enunciado": "Un estudiante desea comprar la cantidad de cerca necesaria para rodear un jardín rectangular cuya\nlongitud es 8 metros y su ancho 5 metros. ¿Cuál de las siguientes afirmaciones describe correctamente\nel razonamiento para hallar la longitud total de la cerca?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Multiplicar largo por ancho",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Sumar largo y ancho una sola vez",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Calcular el perímetro sumando todos los lados",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "Multiplicar todos los lados",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para rodear un rectángulo se necesita la longitud del perímetro, que se calcula sumando todos sus lados. Un rectángulo tiene dos lados iguales al largo y dos lados iguales al ancho; por lo tanto, el perímetro es 2·(largo) + 2·(ancho). Con los valores dados: 2·8 m = 16 m y 2·5 m = 10 m; al sumarlos se obtiene 16 m + 10 m = 26 m.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 255,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "bdfeab70-24ef-4bcc-b055-2e71200c7aad",
+        "enunciado": "Observa la siguiente serie de números: 2, 5, 10, 17, 26, … ¿Cuál es el próximo número que sigue en la\nsecuencia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "34",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "36",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "37",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "38",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para hallar el patrón, calculamos las diferencias entre términos consecutivos: 5-2 = 3, 10-5 = 5, 17-10 = 7, 26-17 = 9.\nEstas diferencias forman la sucesión 3, 5, 7, 9, que aumenta en 2 unidades cada paso. La siguiente diferencia, por\nlo tanto, será 11. Sumando 11 al último término conocido (26) obtenemos 26 + 11 = 37, que es la opción correcta.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Identificación de Patrones"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 28,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "3188de53-b4d7-4e02-a961-884ced97e24f",
+        "enunciado": "En una feria escolar, el stand de experimentos de física vendió 48 boletos y el stand de arte vendió 30\nboletos. Se sabe que el número de boletos vendidos por el stand de física es 1,5 veces el número de\nboletos vendidos por el stand de arte. ¿Cuál de las siguientes afirmaciones describe correctamente la\nrelación entre los boletos vendidos en ambos stands?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "El stand de arte vendió 18 boletos menos que el de física",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "El stand de física vendió el doble que el de arte",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ambos stands vendieron la misma cantidad",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "El stand de arte vendió 12 boletos menos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Para verificar la relación, calculamos la diferencia entre los boletos vendidos: 48 (física) – 30 (arte) = 18 boletos.\nPor lo tanto, el stand de arte vendió 18 boletos menos que el de física, lo que coincide con la primera opción.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": "Problemas Matemático"
+        },
+        "componentes": {
+            "nombre": "Razonamiento Lógico"
+        },
+        "num_pregunta": 249,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "b28cec30-0edd-4835-98d8-381f4b18c2f3",
+        "enunciado": "Basándose en la información proporcionada, ¿cuál es el objetivo principal que persiguen los micro bonos ofrecidos por ONG como EcoBol al incentivar la separación de papel y cartón en los Yungas?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Motivar la separación con un incentivo económico para mejorar hábitos y participación.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Sustituir educación por sanciones para subir la recolección formal de inmediato.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Financiar solo extrusión industrial, sin intervenir en la separación en origen.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Premiar únicamente a empresas grandes, dejando de lado a familias y actores comunitarios.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto señala que los micro bonos buscan ofrecer un estímulo económico que motive la separación de materiales, favoreciendo la participación ciudadana y la economía circular.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 7,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "2ad65a1c-ed32-4eec-9eba-b670148f8e33",
+        "enunciado": "Según el artículo, ¿qué sesgo limita la representatividad de los resultados presentados sobre la eficiencia de la economía circular en Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Sesgo de representatividad: ejemplos solo de Santa Cruz y Cochabamba, sin otras regiones.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Sesgo de confirmación: niega beneficios y prioriza el modelo lineal como solución central.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Sesgo de medición: omite la fórmula de R y no define variables del indicador.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sesgo temporal: usa solo datos de décadas pasadas y excluye por completo cifras recientes.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto se basa en ejemplos de Santa Cruz y Cochabamba, lo que limita la extrapolación de los resultados a nivel nacional.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 27,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "985fe319-1b14-436c-8224-482a3ef91540",
+        "enunciado": "Del análisis presentado se desprende que, de acuerdo al artículo, ¿qué metodología de reciclaje de plásticos se describe como la alternativa más viable a nivel local en Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Reciclaje mecánico: triturar, lavar y extruir plásticos con inversión moderada.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Valorización energética de plásticos en digestores anaeróbicos para biogás rural.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Reciclaje químico de PET con despolimerización industrial de alta complejidad.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Incineración con recuperación térmica como salida principal para los residuos plásticos urbanos.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El artículo identifica la reciclación mecánica de plásticos como la alternativa más viable a nivel local, debido a que requiere inversiones moderadas y puede ser adaptada a pequeñas empresas.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 3,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "637c6bc0-1781-4c4f-9ea3-f26fada66c7a",
+        "enunciado": "Considerando lo mencionado en el texto, ¿cuál de las siguientes comparaciones entre dos propuestas de futuro refleja de manera más precisa su potencial efecto inmediato sobre la eficiencia del reciclaje (R)?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Incentivos financieros impactan más rápido en R al permitir operar tecnologías de inmediato.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Sanciones legales tienen efecto inmediato mayor en R que créditos y fondos verdes.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ambas medidas afectan igual a corto plazo, porque R no depende de inversión.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Fortalecer la ley mejora R al instante, sin recursos para microempresas ni equipamiento.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto explica que los instrumentos financieros permiten a las micro empresas operar de inmediato, mientras que el fortalecimiento legislativo actúa a más largo plazo.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 20,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "f289ad5c-e4e5-4f78-893e-7189ea25bb9b",
+        "enunciado": "Según el artículo, ¿cuál es el mensaje principal implícito que el autor comunica respecto a las soluciones para la gestión de residuos en Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La solución es subir impuestos a envases, sin innovación ni participación comunitaria.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Bastan campañas aisladas, aunque no existan políticas claras ni indicadores de desempeño.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Se requiere integrar políticas, tecnología apropiada y participación para reducir huella y crear oportunidades.",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "La economía circular solo es viable en ciudades grandes y no aplica a zonas rurales del país.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El autor comunica implícitamente que solo una estrategia integral permitirá reducir la huella ecológica y generar oportunidades económicas.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 18,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "ded286e3-211b-4edb-ae7b-25c702a034a3",
+        "enunciado": "Basándose en la información proporcionada, ¿qué efecto indirecto es probable que genere la expansión de los proyectos piloto de digestores anaeróbicos en zonas rurales sobre la dinámica de la economía circular en Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Menos orgánicos a vertedero, más energía/ingresos y mejora de R por valorización de residuos.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Más PET al río, porque el biogás incentiva botar envases plásticos.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Menor recolección formal, al reemplazar municipios por operadores rurales privados.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sin efecto en R, porque R solo considera plásticos y excluye totalmente residuos orgánicos.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto explica que los digestores transforman residuos orgánicos en energía, reducen residuos y mejoran la eficiencia global del reciclaje.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 9,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "ce2539eb-a0fc-4fab-a098-2513b05e0af4",
+        "enunciado": "El artículo señala que el proyecto piloto de digestores anaeróbicos en Cochabamba generó, por cada kilogramo de residuos orgánicos, ¿cuántos metros cúbicos de metano?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "0,35 m³ de metano por kg de residuos orgánicos.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "0,45 m³ de metano por kg de residuos orgánicos.",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "0,55 m³ de metano por kg de residuos orgánicos.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "0,45 m³ de metano por tonelada de residuos orgánicos procesados.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto indica explícitamente que el proyecto piloto en Cochabamba demostró una generación de 0,45 m³ de metano por kilogramo de residuos orgánicos.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 5,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "460d66f2-9be7-4d27-8157-8b69f469738b",
+        "enunciado": "Según el artículo, ¿cómo define la economía circular y qué consecuencias sociales se asocian a su adopción en Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Modelo lineal de extraer–producir–desechar, con foco en vertederos controlados.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Paradigma que cierra ciclos y reduce desechos; abre oportunidades a microempresas.",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Estrategia centrada solo en reciclar plásticos, sin cambios en diseño de productos.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Plan de gestión urbana que prioriza recolección y disposición final sobre reutilización y recuperación.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto define la economía circular como un paradigma que cierra los ciclos de materiales, evita la extracción continua de recursos y minimiza desechos, asociando su adopción con la creación de oportunidades económicas y la mejora de la calidad de vida de las comunidades.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 2,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "7649c966-729a-48d3-9cbd-1892f9a2dcd1",
+        "enunciado": "El artículo señala que la participación de ONG es fundamental para mejorar la separación de residuos en origen. ¿Cuál de las siguientes afirmaciones constituye una evaluación crítica adecuada de la suficiencia de la evidencia presentada?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La evidencia es nacional y concluyente: las ONG siempre elevan separación en todo el país.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Evidencia limitada: es un caso regional sin comparaciones ni pruebas claras de replicabilidad.",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Evidencia suficiente: el 3%→18% prueba causalidad exclusiva y permanente de la ONG.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Evidencia irrelevante: la separación depende solo de sanciones legales y no de educación comunitaria.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto presenta el caso de EcoBol en los Yungas, pero no aporta estudios comparativos o longitudinales a nivel nacional.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 29,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "9ba7471f-098b-4e0c-a0df-7bfe43bebdc1",
+        "enunciado": "La lectura del texto permite identificar que el argumento del autor sobre la validez de establecer indicadores de desempeño, como la tasa de reciclaje R, para mejorar la eficiencia del reciclaje en Bolivia, es:",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Débil: no incluye cifras de PET ni casos de negocio que vinculen medición con resultados.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Parcial: solo explica teoría de R sin ejemplos aplicados en Bolivia.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Sólido: usa cifras y casos como ReciclArte, con resultados medibles y económicos.",
+                "es_correcta": true
+            },
+            {
+                "clave": "D",
+                "texto": "Inconcluso: rechaza medir R y propone únicamente sanciones legales para municipios.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El autor respalda su argumento con datos concretos, como la tasa de reciclaje de PET y el caso de la empresa ReciclArte.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 25,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "47e24bd5-5cdb-4d9a-a0bd-e3a024f4eb17",
+        "enunciado": "A partir de lo expuesto en el artículo, ¿cuál de los siguientes aspectos representa una limitación no abordada por el autor al proponer incentivos financieros y modelos de negocio para la economía circular en Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "No analiza la dimensión de género ni barreras para que mujeres accedan a esos recursos.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "No indica el precio de compra del PET por kilogramo en iniciativas como ReciclArte.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "No presenta la fórmula de R ni define Mrec y Mtotal en el indicador de eficiencia.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "No menciona dispersión geográfica ni falta de recursos como barreras institucionales clave.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El artículo no analiza cómo la desigualdad de género puede limitar el acceso de las mujeres a incentivos financieros, lo que constituye una limitación no abordada.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 22,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "d7d3d669-d746-45d0-b70e-2299a048829d",
+        "enunciado": "Del análisis presentado se desprende que, de acuerdo al artículo, ¿por qué es relevante la incorporación de indicadores de desempeño de reciclaje (R) para la formulación de políticas públicas en los municipios de Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Sirven para evaluar programas, orientar fondos y diseñar incentivos; son métricas obligatorias locales.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Sustituyen infraestructura rural, porque medir R por sí solo eleva el reciclaje automáticamente.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Convierten R en m³ de metano por kg, estimando consumo energético familiar directo.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Eliminan dispersión geográfica al concentrar población, reduciendo costos de recolección formal.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El artículo señala que los indicadores como R ayudan a evaluar la eficacia de programas y a orientar la asignación de recursos municipales.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 26,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "6a5449e8-3d7e-41b4-bcfa-e0d8113995b7",
+        "enunciado": "La lectura del texto permite identificar que, al comparar la reciclación mecánica de PET y la valorización energética mediante digestores anaeróbicos, ¿cuál de las siguientes afirmaciones refleja con mayor precisión la relación entre la complejidad de inversión y el contexto de aplicación de cada proceso?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La mecánica exige alta inversión industrial y se aplica sobre todo en zonas rurales aisladas.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "Digestores requieren inversión moderada y se orientan a PET en ciudades medianas.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ambos demandan la misma inversión y se aplican igual a plásticos y orgánicos.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Mecánico: inversión moderada y adaptable; digestores: biogás útil para comunidades rurales.",
+                "es_correcta": true
+            }
+        ],
+        "sustento": "El artículo señala que la reciclación mecánica es viable a nivel local con inversiones moderadas, mientras que los digestores anaeróbicos son apropiados para comunidades rurales.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 15,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "6451c418-fa98-466a-921d-42edfb0cc3f1",
+        "enunciado": "El artículo señala que la eficiencia del reciclaje (R) permite cuantificar el grado de cierre de los ciclos de materiales. ¿Por qué es relevante este indicador para diseñar una política de incentivos financieros dirigida a micro empresas de reciclaje en Bolivia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "R mide desempeño y permite pagar incentivos a quienes cierren mejor el ciclo de materiales.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "R reemplaza la recolección y vuelve innecesaria la segregación en origen.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "R solo mide plásticos y por eso define por sí solo todo crédito verde disponible.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "R evalúa biodiversidad y calidad del agua más que la efectividad del reciclaje material.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto explica que la tasa R funciona como indicador de desempeño que permite premiar a micro empresas más eficientes en el cierre del ciclo de materiales.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 23,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "8d0508d6-78ab-4a6a-89b9-42724b81588b",
+        "enunciado": "A partir de lo expuesto en el artículo, ¿cuál es la implicación económica directa que se menciona respecto a la empresa ReciclArte en La Paz?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "ReciclArte generó 22 000 USD en 2022 al comprar PET y vender reciclado.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "ReciclArte obtuvo 15 000 USD de ganancia neta por reducción logística en 2022.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "ReciclArte redujo costos operativos 12% tras sustituir transporte por acopio local.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "ReciclArte aumentó producción 8% gracias a subsidios estatales al reciclaje industrial.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El artículo indica que la empresa ReciclArte generó ingresos de 22 000 USD en 2022 al comprar PET y vender material reciclado, siendo esta la implicación económica directa mencionada.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 4,
+        "texto_lectura_id": "1837a54b-1c1d-47bf-819e-829538fd5ee1"
+    },
+    {
+        "id": "70c7055f-49a7-47a6-b4f2-4eeb8c72d080",
+        "enunciado": "De acuerdo con el texto, ¿cuál es el mensaje principal implícito que el autor comunica respecto a los datos estadísticos proporcionados?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La desigualdad rural-urbana limita IA y exige inversión en infraestructura.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "La IA funcionará igual en todo el país, sin importar conectividad ni docentes.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "El problema central es solo la motivación estudiantil, no el internet.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La privacidad ya está resuelta, porque la ley de 2024 está vigente.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El autor destaca que la desigualdad de conectividad limita la implementación uniforme de plataformas basadas en IA y podría ampliar la brecha educativa.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 20,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "a139ac4d-79f5-4da6-9f24-85d5c7e9b54a",
+        "enunciado": "El artículo señala que la IA puede modular la carga cognitiva y la plasticidad sináptica para optimizar el aprendizaje. Según una valoración crítica simple, ¿cuál de los siguientes enunciados representa la mayor fortaleza de este enfoque científico?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Ajustar dificultad a la zona próxima para aprender sin sobrecarga.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Garantizar el mismo aprendizaje en todos, sin diferencias individuales.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Eliminar práctica repetida, porque la memoria se forma sin experiencia.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sustituir la memoria de trabajo del estudiante mediante automatización total.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los sistemas de IA permiten ajustar la complejidad de los ejercicios a la zona de desarrollo próximo del estudiante, maximizando la plasticidad sináptica sin saturar la carga cognitiva.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 14,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "f7976b8c-d3b0-4824-84bf-75edaca5f91f",
+        "enunciado": "Basándose en la información proporcionada, ¿cuál es la segunda consecuencia social que se menciona respecto a la adopción de la IA en la educación boliviana?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Dependencia del algoritmo por no interpretar resultados ni corregir rutas.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Aumento inmediato de banda ancha rural por uso de plataformas con IA.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Eliminación de sesgos, porque los datos de entrenamiento son totalmente rurales.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sustitución total del docente, ya que la IA enseña sin supervisión humana.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La falta de competencias técnicas puede generar una dependencia excesiva del algoritmo, sin la capacidad de interpretar los resultados ni de intervenir cuando la IA sugiere una ruta pedagógica inadecuada. Este es el segundo efecto social mencionado después de la ‘ampliación de la desigualdad educativa’ (primera consecuencia).",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 3,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "c5357ffe-582e-4083-8e3c-81f745d920d1",
+        "enunciado": "Considerando lo mencionado en el texto, ¿cuál de los siguientes sesgos potenciales no se discute explícitamente en el artículo?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Sesgo de género en acceso o uso, no mencionado en el artículo.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Sesgo urbano por datos de entrenamiento concentrados en ciudades.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Sesgo por brecha de conectividad rural-urbana al implementar IA.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sesgo por baja capacitación docente que aumenta dependencia del sistema.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El artículo menciona explícitamente sesgos derivados de datos urbanos, la brecha de conectividad y la falta de capacitación docente, pero no aborda en ningún pasaje un sesgo de género.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 13,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "272e83ff-e16b-4bef-9a41-faef5e12c54d",
+        "enunciado": "El artículo señala que solo el 38% de los hogares rurales tiene conexión de banda ancha, mientras que el 71% de los urbanos sí la posee. ¿Qué consecuencia se puede deducir si esta diferencia de conectividad no se corrige al introducir herramientas de IA en la educación?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Se ampliará la desigualdad educativa al no aplicar IA de forma uniforme.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "La deserción bajará en zonas rurales, aunque no mejoren redes ni equipos.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Subirá la capacitación docente por efecto automático del uso de plataformas.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La infraestructura dejará de importar, porque la IA funciona sin conectividad.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto indica que la brecha digital es significativa y que esta disparidad limita la implementación uniforme de plataformas de IA, pudiendo ampliar la desigualdad educativa si no se adopta una estrategia de mitigación.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 7,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "049e32c5-98dc-4c27-bc9c-8781ad87d0cc",
+        "enunciado": "Según el artículo, ¿qué porcentaje de hogares rurales en Bolivia dispone de conexión a Internet de banda ancha?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "38%.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "71%.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "22%.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "84%.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El texto indica que “solo el 38% de los hogares rurales dispone de conexión a Internet de banda ancha”. Las opciones restantes corresponden a otros indicadores que no se refieren a la conectividad rural.",
+        "dificultad": "fácil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 6,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "1472a5bd-2113-48d2-8300-364d0b92a922",
+        "enunciado": "De acuerdo con el texto, ¿qué consecuencia se puede deducir si se invierte en redes de banda ancha en zonas rurales?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Más estudiantes rurales podrían usar IA al mejorar la conectividad.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Se elimina el sesgo urbano aunque los datos sigan viniendo de ciudades.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La capacitación docente deja de importar si hay internet de alta velocidad.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Las notas subirán exactamente igual que en el piloto, en cualquier contexto.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Invertir en redes de banda ancha rurales es una recomendación para cerrar la brecha digital y permitir una integración responsable de la IA.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 17,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "e3f3eae3-c048-408c-85ca-bcbd78ff42b1",
+        "enunciado": "De acuerdo con el texto, ¿qué conclusión puede extraerse sobre el papel de la pandemia de COVID 19 en la incorporación de la inteligencia artificial en la educación boliviana?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Fue catalizador: aceleró plataformas en línea y abrió espacio a IA.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Fue irrelevante: la IA se incorporó solo por proyectos universitarios previos.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La pandemia frenó lo digital, evitando plataformas para continuidad educativa.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sustituyó conectividad: permitió IA sin internet, datos confiables ni regulación.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La pandemia aceleró la digitalización educativa y permitió a Bolivia incorporar IA siguiendo la tendencia regional.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 27,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "c1cab5be-cedb-4e0c-a49e-810b177124b8",
+        "enunciado": "Según el artículo, ¿cuál de los siguientes actores es el más determinante para garantizar una integración responsable de la IA en la educación boliviana?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "El Ministerio de Educación, por coordinar programa, conectividad, formación y políticas.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Las empresas, porque controlan la regulación y definen estándares nacionales.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Los estudiantes, ya que el uso de apps determina toda la implementación.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Organismos internacionales, porque reemplazan al Estado en inversión y leyes.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El Ministerio de Educación lidera el programa Bolivia Aprende Digital, diseña políticas públicas, impulsa la capacitación docente y coordina la protección de datos, siendo el actor determinante.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 15,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "1cca89b9-1708-49b6-92e1-94a1e00a0712",
+        "enunciado": "Del análisis presentado se desprende que, respecto a los resultados del estudio piloto con tutor virtual basado en IA, la evidencia es:",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Indicio preliminar, útil pero no generalizable sin más estudios.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Prueba definitiva nacional: 1 200 estudiantes representan a toda Bolivia.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Evidencia nula: si suben notas, significa que la IA no tuvo efecto.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Conclusión total: basta el tamaño muestral, sin importar conectividad o docentes.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El artículo aclara que los resultados del estudio piloto son locales y que la efectividad de la IA depende de factores como infraestructura y capacitación docente.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 10,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "d053cf90-88f3-4dfb-8524-c8bfcf915221",
+        "enunciado": "La lectura del texto permite identificar que, si se amplía el uso de la analítica de aprendizaje basada en IA en los colegios bolivianos, ¿qué es probable que ocurra?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Podría bajar la deserción al detectar riesgo temprano y dar apoyo.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "El sesgo urbano desaparece, aunque los datos sigan siendo de ciudades.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "La conectividad deja de ser necesaria, porque la analítica no usa plataformas.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Sube la repetición, porque predecir riesgo impide intervenir pedagógicamente.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La experiencia del proyecto Alerta Escolar sugiere que la identificación temprana de riesgos permite reducir la deserción escolar.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 26,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "3fe7d526-be20-47d9-b3ba-c7a9f3ac934a",
+        "enunciado": "De acuerdo con el texto, ¿qué conclusión lógica se puede extraer sobre los procesos técnicos de IA que personalizan el aprendizaje?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Estimar la zona próxima y ajustar ejercicios para evitar sobrecarga.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Personalizar sin datos previos, porque la zona próxima no depende del alumno.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Bajar la dificultad siempre, para que la memoria de trabajo no se use.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Aumentar la complejidad de forma fija para maximizar la carga cognitiva en todos.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los algoritmos de recomendación de IA pueden estimar la zona de desarrollo próximo del alumno y adaptar la complejidad de los ejercicios, maximizando la plasticidad sináptica sin saturar la carga cognitiva.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 21,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "f42325a4-d0b2-4cb9-953d-c361afe15c31",
+        "enunciado": "De acuerdo con el texto, ¿qué organismo proporciona la cifra del 38% de hogares rurales bolivianos con conexión a Internet de banda ancha?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "UNESCO (2022), por reportes regionales sobre educación digital.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "INE (2023), como fuente estadística de conectividad rural.",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "Ministerio de Educación, por informes del programa Bolivia Aprende Digital.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "UMSA, por encuestas de proyectos tecnológicos en aulas bolivianas.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Según el Instituto Nacional de Estadística (INE, 2023), solo el 38% de los hogares rurales dispone de conexión a Internet de banda ancha. Las demás opciones son incorrectas: el Ministerio de Educación impulsa programas educativos, la UNESCO reporta datos a nivel regional y la UMSA participa en proyectos de realidad aumentada, pero ninguna de ellas es la fuente de la estadística mencionada.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 2,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "e7575dd1-8cec-4dd3-9cd9-1fcb7bfb283b",
+        "enunciado": "Según el artículo, ¿qué actor es mencionado primero como iniciador de la implementación de herramientas de IA en la educación boliviana?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "La Universidad Católica Boliviana, por su estudio piloto con bachilleres.",
+                "es_correcta": false
+            },
+            {
+                "clave": "B",
+                "texto": "El Ministerio de Educación, con Bolivia Aprende Digital (2022–2025).",
+                "es_correcta": true
+            },
+            {
+                "clave": "C",
+                "texto": "La UATF, mediante Alerta Escolar y predicción de riesgo en Tarija.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La UMSA, por Química en 3D y realidad aumentada educativa.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El artículo introduce primero al Ministerio de Educación como responsable del programa ‘Bolivia Aprende Digital’ (2022 2025), que incorpora plataformas de IA como Khan Academy y Microsoft Education. Los proyectos de la Universidad Católica Boliviana, la Universidad Autónoma Tomás Frías y la Universidad Mayor de San Andrés se describen posteriormente, por lo que no son los primeros actores mencionados.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 1,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "63cf0dd3-5903-439f-aeaa-929163322f8e",
+        "enunciado": "De acuerdo con el texto, ¿cuál de los siguientes aspectos representa una posible limitación que podría sesgar los resultados del estudio piloto sobre tutores virtuales?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Muestra de la UCB sin asegurar diversidad rural o regional.",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "No se registraron calificaciones iniciales; solo se reportaron promedios finales.",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "El piloto se basó únicamente en química 3D y no en tutores de matemática.",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "La ley de datos ya promulgada invalidó el estudio por cambios regulatorios inmediatos.",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El estudio piloto se realizó en la Universidad Católica Boliviana con 1 200 estudiantes de segundo de bachillerato, sin especificar si incluía a escuelas rurales o de diferentes regiones; por tanto, la muestra es limitada y no representa a todo el sistema educativo boliviano, lo que constituye una posible fuente de sesgo.",
+        "dificultad": "difícil",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Comprensión Lectora"
+        },
+        "num_pregunta": 11,
+        "texto_lectura_id": "822e21f8-6e8e-4101-bda3-966cb7de56f5"
+    },
+    {
+        "id": "3fdf9b42-dd7b-47ff-8612-897088987c32",
+        "enunciado": "En una unidad educativa de reciente migración, un estudiante nuevo queda aislado en los recreos y en aula. ¿Qué acción docente muestra mayor sensibilidad socioemocional y mejora la integración sin forzar la convivencia?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Organizar dinámicas cooperativas y pactar apoyos entre pares, cuidando su comodidad",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Asignarle tareas individuales por semanas para que “se adapte” sin depender del grupo",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Esperar que el curso lo incluya solo, evitando intervenir para no “interferir”",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Exigir públicamente que lo integren, sin un plan, para que el grupo “aprenda respeto”",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La inclusión se construye con estrategias planificadas: cooperación, acompañamiento entre pares y un clima seguro.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 8,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "52540fa5-e849-48a0-8a7c-c5edba220212",
+        "enunciado": "Un estudiante de primero de secundaria expresa frustración porque “se queda atrás” frente a sus compañeros y empieza a evitar participar. ¿Cuál respuesta docente es más empática y formativa para sostener su autoestima y progreso?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Validar lo que siente y proponer apoyos concretos, con metas pequeñas y seguimiento",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Decirle que “se esfuerce más” y que no hay adaptaciones porque todos rinden igual",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Compararlo con el mejor del curso para motivarlo y que “aprenda a exigirse”",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Restar importancia a su preocupación para que no “se sugestione” y continuar la clase",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El apoyo socioemocional se traduce en acciones pedagógicas específicas: metas realistas, acompañamiento y retroalimentación.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 7,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "d30fa4ad-ef4d-4fc1-bc72-eff0592b02e0",
+        "enunciado": "Durante una reunión de padres de familia, un padre expresa con gran emotividad su preocupación porque su hijo, quien presenta dificultades de aprendizaje, no está recibiendo suficiente apoyo. Mientras expone su situación, varios padres comienzan a mostrar señales de impaciencia. Como maestra o maestro a cargo de la reunión, ¿cuál sería la estrategia más apropiada para manejar esta situación?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Escuchar con empatía, validar su preocupación y programar un espacio para atender el caso",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Cortar su intervención para “no atrasar” y pedirle que escriba una nota para después leerla",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Indicar que la reunión no es para temas personales y continuar con la agenda sin debatir",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Finalizar la reunión para evitar tensión y citar a todos nuevamente cuando haya más tiempo",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La empatía y la comunicación asertiva fortalecen la confianza con las familias.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 3,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "df4360b7-4983-4b0e-a24c-91b8980bb4d1",
+        "enunciado": "En una evaluación grupal de Ciencias Sociales en una unidad educativa fiscal, el equipo señala que un compañero casi no participó y surge un reclamo tenso por la nota. Como docente, ¿qué intervención favorece justicia y aprendizaje colaborativo?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Escuchar a todas las partes y acordar criterios de responsabilidad para el trabajo en equipo",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Cambiar la nota del estudiante acusado sin diálogo para “evitar conflictos” y cerrar el tema",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Anular el trabajo grupal y repetir la evaluación individual sin analizar qué falló en el proceso",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Aplicar sanción inmediata al estudiante señalado basándose solo en la versión del grupo",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La mediación con escucha, acuerdos y criterios claros fortalece corresponsabilidad y evita sanciones arbitrarias.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 6,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "daf41129-2acf-4e1d-a100-01c569a71730",
+        "enunciado": "Durante una jornada de observación en un colegio rural multigrado, la persona postulante nota que los estudiantes de diferentes edades muestran dificultades para trabajar en equipo. El director ofrece acceso a las planificaciones de aula y a los registros de evaluación diagnóstica de los últimos tres meses. Como futura maestra o futuro maestro interesado en su formación, ¿cuál sería la acción más pertinente para comprender mejor esta situación?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Revisar planificaciones y diagnósticos para identificar patrones en la dinámica de trabajo grupal",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Aplicar de inmediato una técnica de “roles” sin revisar evidencias para ver si mejora el clima",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Concluir que el problema es de disciplina y pedir al director sanciones para “ordenar” equipos",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Evitar intervenir porque en aulas multigrado es “normal” que el trabajo en equipo sea difícil",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "El análisis reflexivo de información pedagógica permite comprender mejor las dificultades socioemocionales.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 2,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "67ce938c-67db-40eb-9711-8d98a73a1be8",
+        "enunciado": "Durante una sesión de trabajo en grupo en cuarto de primaria, un estudiante con diagnóstico de TEA (Trastorno del Espectro Autista) manifiesta incomodidad ante los ruidos fuertes y la proximidad física de sus compañeros. Un grupo de estudiantes comienza a burlarse de sus reacciones, imitando sus movimientos y aumentando deliberadamente el volumen de voz. La persona postulante, en su rol de maestra o maestro a cargo, observa la situación. ¿Cuál sería la intervención más adecuada en ese momento?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Intervenir de inmediato, proteger al estudiante y orientar al grupo hacia respeto e inclusión",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Retirar al estudiante para “evitar problemas” y continuar la actividad con el resto del curso",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ignorar el episodio para no reforzar la conducta y esperar que el grupo se autorregule",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Llamar la atención al estudiante con TEA por “interrumpir” y pedirle que se calme rápidamente",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La inclusión y el respeto son fundamentales para la convivencia escolar.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 5,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "06f0fa91-a044-481c-92e9-4c570e423ac3",
+        "enunciado": "Durante una actividad grupal, dos estudiantes discuten fuerte y se atacan verbalmente. ¿Cuál intervención docente favorece resolución pacífica sin minimizar el daño?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Detener la escalada, facilitar diálogo guiado y acordar reparación y compromisos claros",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Aplicar sanciones inmediatas a ambos sin escuchar, para “cortar” el problema rápido",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ignorar el conflicto porque “se les pasará” y continuar con la actividad normal",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Separar al grupo permanentemente sin trabajar habilidades de convivencia ni acuerdos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La intervención formativa combina contención, diálogo guiado y reparación, desarrollando habilidades sociales.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 17,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "78919656-f3b4-4f46-b9e1-7dbb03e21a99",
+        "enunciado": "Un grupo rechaza trabajar con compañeros “distintos” (por origen, lengua o rendimiento) y arma equipos cerrados. ¿Qué acción docente promueve convivencia y aprendizaje cooperativo?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Diseñar equipos heterogéneos con roles, metas comunes y reflexión sobre respeto y aporte",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Permitir que trabajen solo con amigos para evitar quejas, aunque se refuercen exclusiones",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ignorar el patrón para no generar conflicto, asumiendo que “es parte de la edad”",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Imponer castigos por no mezclarse, sin enseñar estrategias de cooperación ni acuerdos",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La cooperación se enseña: equipos heterogéneos, roles y metas comunes reducen exclusión y mejoran convivencia.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 20,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "f5992df5-037e-4578-8b98-077d39f806b3",
+        "enunciado": "Un estudiante dice sentirse excluido y afirma que lo dejan fuera en trabajos y recreos. ¿Qué acción docente es más coherente para intervenir de forma responsable?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Escuchar, indagar con cuidado y activar acciones inclusivas con el grupo y seguimiento",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Minimizar el hecho para que “no sea sensible” y pedirle que se adapte por su cuenta",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Derivar todo a dirección sin intervenir en aula, evitando conversar con el curso",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Ignorar el caso para no “señalar” al estudiante, aunque la exclusión continúe",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La inclusión requiere escucha, verificación responsable y acciones sostenidas: acuerdos grupales y seguimiento.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 18,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "c9d7c557-9d86-4f64-a9de-d54084541587",
+        "enunciado": "Durante una reunión de docentes para planificar el proyecto interdisciplinario anual, surge un conflicto entre dos colegas con enfoques pedagógicos diferentes: la profesora de Ciencias Sociales propone un proyecto basado en la investigación histórica con énfasis en el análisis crítico de fuentes, mientras que el profesor de Matemática defiende un proyecto centrado en estadísticas y modelado matemático de fenómenos sociales. La discusión se torna tensa, con argumentos que cuestionan la relevancia de cada propuesta. Como maestra o maestro que busca mediar este desacuerdo, ¿cuál sería la estrategia más adecuada para gestionar el conflicto?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Promover diálogo y construir una propuesta integradora que aproveche ambos enfoques",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Definir que solo una línea es válida y asignar el proyecto según la materia “más evaluable”",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Posponer la decisión y pedir que cada docente trabaje su parte sin coordinación para evitar roces",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Cerrar el debate y solicitar que la dirección imponga el enfoque para no extender el conflicto",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La mediación y el respeto fortalecen el trabajo colaborativo.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 4,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "4a0dd6d5-79fb-45e8-962a-e4715221b615",
+        "enunciado": "En trabajo cooperativo, un estudiante domina el grupo, reparte tareas sin consenso y silencia a otros. ¿Qué intervención docente es más pertinente para equilibrar participación sin humillarlo?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Intervenir con roles y turnos, y guiar al grupo para distribuir responsabilidades equitativas",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Dejar que lidere porque “al menos alguien organiza”, aunque otros queden fuera",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Excluirlo del equipo como castigo, sin acompañamiento, para “dar oportunidad” a los demás",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Cancelar la actividad y pasar a trabajo individual para evitar futuros conflictos de liderazgo",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La mediación con estructura (roles, turnos, acuerdos) protege la voz de todos y enseña liderazgo colaborativo.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 13,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "0f3cb1e3-90a3-4fa2-9d13-ad22d451630f",
+        "enunciado": "En una evaluación oral, un estudiante se bloquea emocionalmente y no logra continuar. ¿Cuál respuesta docente mantiene la exigencia con enfoque humano?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Dar tiempo breve, ofrecer alternativa de continuar luego o con apoyo, manteniendo criterios",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Suspender toda la evaluación del curso por el incidente y reprogramar sin criterios",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Reprenderlo por “no prepararse” y cerrar con una calificación inmediata sin revisión",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Asignar nota mínima al instante para “evitar favoritismos” y pasar al siguiente",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Los ajustes razonables permiten evaluar sin castigar el bloqueo emocional, preservando equidad y aprendizaje.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 19,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "3a2b9cf3-1eb5-4e6f-bfd5-20d50a464292",
+        "enunciado": "Un estudiante expresa una opinión minoritaria en debate de aula y el grupo se burla. ¿Qué actitud docente favorece habilidades socioemocionales y pensamiento democrático?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Cuidar el respeto, dar espacio a argumentos y promover diálogo con reglas de convivencia",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Corregirlo públicamente para alinearlo con la mayoría y evitar “confusión” en el curso",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ridiculizar la postura para que el grupo “aprenda” qué ideas no se aceptan en clase",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Ignorar la burla para no interrumpir el avance del contenido planificado",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Respetar la diversidad de ideas y regular la interacción fortalece convivencia, participación y pensamiento crítico.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 12,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "2875afa0-e0c6-48f0-80da-5eb7f668f1df",
+        "enunciado": "Un curso de primaria incumple reiteradamente acuerdos de convivencia (turnos, cuidado del aula, respeto). ¿Qué estrategia promueve autorregulación y corresponsabilidad sin depender solo de castigos?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Revisar acuerdos con el curso, definir consecuencias reparadoras y monitorear avances",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Imponer nuevas normas sin discusión y aplicar castigos colectivos para “dar ejemplo”",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Eliminar los acuerdos porque “no sirven” y dejar que cada quien actúe como prefiera",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Derivar el tema solo a dirección, sin trabajarlo en aula, para no perder tiempo pedagógico",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La convivencia mejora cuando el grupo comprende y asume acuerdos, con consecuencias formativas y seguimiento.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 10,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "d5653733-b514-458c-9529-441fbcc69e13",
+        "enunciado": "La persona postulante se encuentra a cargo del último curso de secundaria. Durante una sesión de revisión para los exámenes de ingreso universitario, un estudiante que generalmente tiene buen desempeño comienza a criticar abiertamente la metodología de enseñanza, afirmando que es “anticuada e inútil”. Otros estudiantes empiezan a mostrar signos de acuerdo, generando un ambiente de tensión colectiva. El estudiante agrega: “Con esta forma de enseñar, ninguno de nosotros va a pasar el examen”. Ante esta situación, ¿cuál sería la respuesta más apropiada para manejar la tensión?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Escuchar su crítica, reconocer la inquietud y abrir un diálogo con reglas de respeto",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Pedirle que exponga al final y recalcar que el método no se discute en esa sesión",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Responder con firmeza que la evaluación es externa y continuar para no “perder tiempo”",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Solicitar que se disculpe frente al curso y retomar el tema cuando el ambiente se calme",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La escucha activa y el diálogo permiten manejar tensiones, validar emociones y fortalecer la convivencia en el aula.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 1,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "7e7f9402-7253-411a-9619-5574bfab7d91",
+        "enunciado": "Un estudiante recibe una calificación baja y reacciona con enojo, diciendo que “es injusto”. ¿Cuál respuesta docente es más formativa para regular emociones y orientar mejora?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Explicar criterios, mostrar evidencias del desempeño y acordar un plan de mejora realista",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Ignorar su reacción y continuar, asumiendo que “se le pasará” sin retroalimentación",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Reprenderlo por su actitud y cerrar el diálogo, priorizando disciplina sobre aprendizaje",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Subir la nota para evitar conflicto, sin aclarar criterios ni revisar el proceso de evaluación",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La retroalimentación basada en criterios y evidencias favorece autorregulación, justicia percibida y progreso.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 14,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "e48c403e-92c9-432f-8423-77079b0b2265",
+        "enunciado": "Durante una clase, un estudiante detecta un error del docente en un procedimiento y lo señala con respeto. ¿Qué respuesta modela mejor pensamiento crítico y clima de confianza?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Reconocer el error, agradecer y corregirlo explicando el procedimiento de forma clara",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Descalificar el comentario para mantener autoridad y continuar sin corregir el contenido",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ignorar la observación y pedir silencio, dejando el error “para después” sin retomarlo",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Aplicar una llamada de atención por interrumpir, aunque el contenido sea correcto",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "Aceptar correcciones con humildad fortalece el aprendizaje, la credibilidad docente y la participación responsable.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 9,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "1692e9fa-5085-4375-98fe-ac8717d21d94",
+        "enunciado": "Un estudiante se muestra retraído y evita participar en clase. ¿Qué actitud docente es más adecuada?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Generar confianza, acercamiento gradual y oportunidades seguras de participación, sin presión",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Forzarla a exponer en público para que “pierda miedo” y se acostumbre rápidamente",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Ignorar la situación porque “hay estudiantes así” y enfocarse solo en el contenido",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Llamarle la atención delante del curso para que reaccione y cambie su actitud",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La confianza favorece la participación y el bienestar emocional.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 16,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "8ac9ceab-7cec-42af-afb9-b359e3644d66",
+        "enunciado": "En una actividad intercultural, surgen comentarios estereotipados sobre una nación o pueblo indígena. ¿Qué acción docente promueve mejor empatía y reflexión sin convertirlo en “sermón”?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Problematizar el estereotipo con preguntas, acuerdos de respeto y ejemplos del contexto local",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Ignorar el comentario para no “darle importancia” y seguir con la actividad prevista",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Sancionar de inmediato sin explicar, para que “aprendan”, y terminar el tema rápido",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Suspender la actividad sin diálogo, evitando profundizar, para “no generar polémica”",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La educación intercultural requiere orientar el análisis crítico de prejuicios y sostener normas de respeto.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 15,
+        "texto_lectura_id": null
+    },
+    {
+        "id": "5cab0d37-01a3-4766-925b-7b6fd10dc7e2",
+        "enunciado": "En una prueba, una estudiante presenta ansiedad visible (temblor, bloqueo) y pide unos minutos. ¿Qué intervención es más adecuada para sostener el rendimiento sin vulnerar la evaluación?",
+        "opciones": [
+            {
+                "clave": "A",
+                "texto": "Dar contención breve, ajustar el ritmo o formato si corresponde y mantener criterios claros",
+                "es_correcta": true
+            },
+            {
+                "clave": "B",
+                "texto": "Exigir que continúe igual para evitar “ventajas”, sin considerar su estado emocional",
+                "es_correcta": false
+            },
+            {
+                "clave": "C",
+                "texto": "Retirarla del aula de inmediato y colocar nota mínima para “cerrar” la situación",
+                "es_correcta": false
+            },
+            {
+                "clave": "D",
+                "texto": "Ignorar señales para no “reforzar” la ansiedad y seguir con el procedimiento normal",
+                "es_correcta": false
+            }
+        ],
+        "sustento": "La evaluación puede mantener criterios mientras se aplican ajustes razonables que protejan el bienestar.",
+        "dificultad": "media",
+        "disciplinas": {
+            "nombre": null
+        },
+        "componentes": {
+            "nombre": "Habilidades Socioemocionales"
+        },
+        "num_pregunta": 11,
+        "texto_lectura_id": null
+    }
+]

@@ -18,6 +18,13 @@ export default function InstruccionesPage() {
   // Verificar si hay resultados guardados y obtener usuario
   useEffect(() => {
     const checkStatus = () => {
+      // Verificar si el examen ya fue finalizado
+      const examStatus = localStorage.getItem("exam_status");
+      if (examStatus === "finalizado") {
+        router.push("https://admision01.dgfm.minedu.gob.bo/");
+        return;
+      }
+
       const examResults = localStorage.getItem("exam_results");
       const inProgress = localStorage.getItem("exam_in_progress") === "true";
       const user = localStorage.getItem("exam_user");
@@ -30,7 +37,7 @@ export default function InstruccionesPage() {
     };
 
     checkStatus();
-  }, []);
+  }, [router]);
 
   const handleLogout = () => {
     localStorage.removeItem("exam_user");
@@ -38,23 +45,6 @@ export default function InstruccionesPage() {
   };
 
   const handleStartExam = () => {
-    // Si hay un examen en progreso, preguntar si desea continuar o reiniciar
-    if (examInProgress) {
-      const continueExam = window.confirm(
-        "Tienes una prueba en progreso. ¿Deseas continuar donde lo dejaste?",
-      );
-
-      if (!continueExam) {
-        // Limpiar estado
-        localStorage.removeItem("exam_current_index");
-        localStorage.removeItem("exam_user_answers");
-        localStorage.removeItem("exam_flagged_questions");
-        localStorage.removeItem("exam_start_time");
-        localStorage.removeItem("exam_in_progress");
-        localStorage.removeItem("exam_tiempo_restante");
-      }
-    }
-
     router.push("/prueba");
   };
 
@@ -81,7 +71,7 @@ export default function InstruccionesPage() {
       <div className="card">
         {/* Header con Status Badge y Logout */}
         {/* Botón Cerrar Sesión */}
-        <button onClick={handleLogout} className="logout-btn top-6 right-6 absolute">
+        <button onClick={handleLogout} className="logout-btn border top-6 right-6 absolute">
           🚪 Cerrar Sesión
         </button>
         <div
@@ -105,8 +95,8 @@ export default function InstruccionesPage() {
         {username && (
           <div className="user-card">
             <span>👤</span>
-            <span style={{ color: "#99a7bbff" }}>Usuario:</span>
-            <span style={{ color: "#00ffff", fontFamily: "monospace" }}>
+            <span style={{ color: "var(--text-primary)" }}>Usuario:</span>
+            <span style={{ color: "var(--text-secondary)" }}>
               {username}
             </span>
           </div>
@@ -117,8 +107,9 @@ export default function InstruccionesPage() {
         <div style={{ marginBottom: "2rem" }}>
           <h3
             style={{
-              color: "#32bbbbff",
+              color: "var(--text-accent)",
               fontSize: "1.2rem",
+              fontWeight: "bold",
               marginBottom: "1rem",
               fontFamily: "Orbitron, sans-serif",
             }}
@@ -316,11 +307,12 @@ export default function InstruccionesPage() {
           }
           .logout-btn {
             padding: 0.5rem 1rem;
-            background: transparent;
-            border: 1px solid #ff6b6b;
+            background: var(--bg-error);
+            border: 0,7px solid #ff6b6b;
             border-radius: 8px;
             color: #ff6b6b;
             font-size: 0.85rem;
+            font-weight: semibold;
             cursor: pointer;
             transition: all 0.3s ease;
           }

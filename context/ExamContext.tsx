@@ -35,6 +35,7 @@ interface ExamContextType {
   examInProgress: boolean;
   examData: ExamData;
   tiempoRestante: number;
+  isRestored: boolean;
 
   // Funciones
   startExam: () => void;
@@ -70,6 +71,7 @@ export function ExamProvider({ children }: { children: ReactNode }) {
   const [examStartTime, setExamStartTime] = useState<number | null>(null);
   const [examInProgress, setExamInProgress] = useState(false);
   const [tiempoRestante, setTiempoRestante] = useState(EXAM_DATA.tiempo_total);
+  const [isRestored, setIsRestored] = useState(false);
 
   // Timer countdown
   useEffect(() => {
@@ -107,6 +109,8 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     if (savedStartTime) setExamStartTime(parseInt(savedStartTime, 10));
     if (savedInProgress === "true") setExamInProgress(true);
     if (savedTiempo) setTiempoRestante(parseInt(savedTiempo, 10));
+
+    setIsRestored(true);
   }, []);
 
   // Guardar en localStorage
@@ -295,6 +299,7 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     examInProgress,
     examData,
     tiempoRestante,
+    isRestored,
     startExam,
     saveAnswer,
     nextQuestion,

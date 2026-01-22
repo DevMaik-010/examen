@@ -1,8 +1,38 @@
 // ============================================
-// DATOS DE PRUEBA - PREGUNTAS DEL EXAMEN
-// Formato compatible con el sistema React original
+// DATOS DEL EXAMEN - CARGA DESDE JSON
 // ============================================
 
+import preguntasJson from "./preguntas.json";
+import textosJson from "./textos.json";
+
+// Interfaces para los datos JSON
+interface OpcionJson {
+  clave: string;
+  texto: string;
+  es_correcta: boolean;
+}
+
+interface PreguntaJson {
+  id: string;
+  enunciado: string;
+  opciones: OpcionJson[];
+  sustento: string;
+  dificultad: string;
+  disciplinas: { nombre: string };
+  componentes: { nombre: string };
+  num_pregunta: number;
+  texto_lectura_id: string | null;
+}
+
+interface TextoJson {
+  id: string;
+  titulo: string;
+  contenido: string;
+  fuente: string | null;
+  componente_id: string;
+}
+
+// Interfaces para el sistema del examen
 export interface Opcion {
   id: string;
   pregunta: string;
@@ -12,13 +42,28 @@ export interface Pregunta {
   id: string;
   pregunta: string;
   articulo?: string | null;
-  tipo_de_pregunta: number; // 1=V/F, 2=Multiple, 3=Simple, 4=Abierta
+  articulo_titulo?: string | null;
+  tipo_de_pregunta: number;
   tiempo: number;
   categoria: string;
   capacidad?: string | null;
   opciones: string[];
   opcionesCompletas: Opcion[];
   respuesta_correcta: string | null;
+  // Nuevos campos del JSON
+  disciplina?: string;
+  componente?: string;
+  dificultad?: string;
+  sustento?: string;
+  num_pregunta?: number;
+  texto_lectura_id?: string | null;
+}
+
+export interface TextoLectura {
+  id: string;
+  titulo: string;
+  contenido: string;
+  fuente: string | null;
 }
 
 export interface ExamData {
@@ -27,859 +72,102 @@ export interface ExamData {
   tiempo_total: number;
   tiempo_transcurrido: number;
   preguntas: Pregunta[];
+  textos: TextoLectura[];
 }
 
-// Datos ficticios de preguntas
+// Función para obtener el texto de lectura por ID
+function getTextoById(textoId: string | null): { contenido: string; titulo: string } | null {
+  if (!textoId) return null;
+  const texto = (textosJson as TextoJson[]).find((t) => t.id === textoId);
+  return texto ? { contenido: texto.contenido, titulo: texto.titulo } : null;
+}
+
+// Función para determinar la categoría según el componente
+function getCategoriaFromComponente(componente: string): string {
+  const componenteLower = componente.toLowerCase();
+  if (componenteLower.includes("razonamiento")) return "razonamiento_logico";
+  if (componenteLower.includes("comprensión") || componenteLower.includes("comprension")) return "comprension_lectora";
+  if (componenteLower.includes("socioemocional") || componenteLower.includes("habilidades")) return "socio_emocional";
+  return "conocimientos_generales";
+}
+
+// Función para determinar el tiempo según la categoría
+function getTiempoPorCategoria(categoria: string): number {
+  switch (categoria) {
+    case "comprension_lectora":
+      return 90;
+    case "razonamiento_logico":
+      return 60;
+    case "socio_emocional":
+      return 30;
+    default:
+      return 45;
+  }
+}
+
+// Transformar preguntas del JSON al formato del sistema
+function transformarPreguntas(preguntasRaw: PreguntaJson[]): Pregunta[] {
+  return preguntasRaw.map((p, index) => {
+    const categoria = getCategoriaFromComponente(p.componentes?.nombre || "");
+    const textoData = getTextoById(p.texto_lectura_id);
+
+    return {
+      id: p.id,
+      pregunta: p.enunciado,
+      articulo: textoData?.contenido || null,
+      articulo_titulo: textoData?.titulo || null,
+      tipo_de_pregunta: 3, // Multiple choice
+      tiempo: getTiempoPorCategoria(categoria),
+      categoria: categoria,
+      capacidad: p.disciplinas?.nombre || null,
+      opciones: p.opciones.map((o) => o.texto),
+      opcionesCompletas: p.opciones.map((o, idx) => ({
+        id: `${p.id}-${o.clave}`,
+        pregunta: o.texto,
+      })),
+      respuesta_correcta: p.opciones.find((o) => o.es_correcta)?.clave || null,
+      // Campos adicionales
+      disciplina: p.disciplinas?.nombre,
+      componente: p.componentes?.nombre,
+      dificultad: p.dificultad,
+      sustento: p.sustento,
+      num_pregunta: p.num_pregunta,
+      texto_lectura_id: p.texto_lectura_id,
+    };
+  });
+}
+
+// Transformar textos del JSON
+function transformarTextos(textosRaw: TextoJson[]): TextoLectura[] {
+  return textosRaw.map((t) => ({
+    id: t.id,
+    titulo: t.titulo,
+    contenido: t.contenido,
+    fuente: t.fuente,
+  }));
+}
+
+// Datos del examen cargados desde JSON
 export const EXAM_DATA: ExamData = {
   tema: "ESFM",
   descripcion: "Prueba de admisión",
   tiempo_total: 7200, // 2 horas en segundos
   tiempo_transcurrido: 0,
-  preguntas: [
-    // RAZONAMIENTO LÓGICO (20 preguntas)
-    ...Array.from({ length: 20 }, (_, i) => ({
-      id: `rl-${i + 1}`,
-      pregunta: [
-        "Si todos los gatos son felinos y algunos felinos son salvajes, ¿cuál de las siguientes afirmaciones es necesariamente verdadera?",
-        "En una secuencia numérica: 2, 6, 12, 20, 30, ¿cuál es el siguiente número?",
-        "María es más alta que Juan, Pedro es más bajo que Juan, Luis es más alto que María. ¿Quién es el más alto?",
-        "Si A → B y B → C, entonces:",
-        "Complete la serie: 1, 1, 2, 3, 5, 8, ___",
-        "Un reloj marca las 3:15, ¿cuál es el ángulo entre las manecillas?",
-        "Si 'CASA' se codifica como 'DBTB', ¿cómo se codifica 'MESA'?",
-        "¿Cuál es el número que falta? 81, 27, 9, 3, ___",
-        "Si hoy es miércoles, ¿qué día será dentro de 100 días?",
-        "En un grupo de 30 personas, 18 hablan inglés y 15 hablan francés. Si 5 no hablan ningún idioma, ¿cuántos hablan ambos?",
-        "Si el cuadrado de un número más 5 es igual a 30, ¿cuál es el número?",
-        "¿Cuántos triángulos hay en un pentágono dividido desde un vértice?",
-        "Si 3x + 7 = 22, entonces x es igual a:",
-        "Un tren sale a las 8:00 AM y viaja a 60 km/h. ¿A qué hora llegará a una ciudad a 180 km?",
-        "Si LIBRO es a LECTURA como PINCEL es a:",
-        "¿Cuál es el menor número que al dividirlo entre 3, 4 y 5 deja residuo 2?",
-        "En una carrera, Ana está delante de Beto pero detrás de Carlos. ¿Quién va primero?",
-        "Si todos los A son B, y ningún B es C, entonces:",
-        "¿Cuántos cubos pequeños se necesitan para formar un cubo de 3x3x3?",
-        "Si el precio de un producto aumenta 20% y luego baja 20%, el precio final es:",
-      ][i % 20],
-      articulo: null,
-      tipo_de_pregunta: 3,
-      tiempo: 60,
-      categoria: "razonamiento_logico",
-      capacidad: "Análisis lógico",
-      opciones: [
-        [
-          "Todos los gatos son salvajes",
-          "Algunos gatos pueden ser salvajes",
-          "Ningún gato es salvaje",
-          "Todos los felinos son gatos",
-        ],
-        ["40", "42", "44", "46"],
-        ["Luis", "María", "Juan", "Pedro"],
-        ["A → C", "C → A", "No hay relación", "A = C"],
-        ["13", "11", "12", "14"],
-        ["7.5°", "0°", "15°", "22.5°"],
-        ["NFTB", "NFUB", "MFTB", "NGTB"],
-        ["1", "0", "3", "1/3"],
-        ["Viernes", "Jueves", "Sábado", "Domingo"],
-        ["8", "10", "12", "5"],
-        ["5", "6", "4", "7"],
-        ["3", "4", "5", "2"],
-        ["5", "6", "4", "7"],
-        ["11:00 AM", "10:30 AM", "11:30 AM", "12:00 PM"],
-        ["Arte", "Pintura", "Color", "Cuadro"],
-        ["62", "57", "47", "37"],
-        ["Carlos", "Ana", "Beto", "No se puede determinar"],
-        [
-          "Ningún A es C",
-          "Todos los A son C",
-          "Algunos A son C",
-          "No hay conclusión",
-        ],
-        ["27", "9", "18", "36"],
-        [
-          "Igual al original",
-          "Menor que el original",
-          "Mayor que el original",
-          "96% del original",
-        ],
-      ][i % 20],
-      opcionesCompletas: [
-        [
-          "Todos los gatos son salvajes",
-          "Algunos gatos pueden ser salvajes",
-          "Ningún gato es salvaje",
-          "Todos los felinos son gatos",
-        ],
-        ["40", "42", "44", "46"],
-        ["Luis", "María", "Juan", "Pedro"],
-        ["A → C", "C → A", "No hay relación", "A = C"],
-        ["13", "11", "12", "14"],
-        ["7.5°", "0°", "15°", "22.5°"],
-        ["NFTB", "NFUB", "MFTB", "NGTB"],
-        ["1", "0", "3", "1/3"],
-        ["Viernes", "Jueves", "Sábado", "Domingo"],
-        ["8", "10", "12", "5"],
-        ["5", "6", "4", "7"],
-        ["3", "4", "5", "2"],
-        ["5", "6", "4", "7"],
-        ["11:00 AM", "10:30 AM", "11:30 AM", "12:00 PM"],
-        ["Arte", "Pintura", "Color", "Cuadro"],
-        ["62", "57", "47", "37"],
-        ["Carlos", "Ana", "Beto", "No se puede determinar"],
-        [
-          "Ningún A es C",
-          "Todos los A son C",
-          "Algunos A son C",
-          "No hay conclusión",
-        ],
-        ["27", "9", "18", "36"],
-        [
-          "Igual al original",
-          "Menor que el original",
-          "Mayor que el original",
-          "96% del original",
-        ],
-      ][i % 20].map((opt, idx) => ({
-        id: `${i + 1}-${idx + 1}`,
-        pregunta: opt,
-      })),
-      respuesta_correcta: null,
-    })),
-
-    // CONOCIMIENTOS GENERALES (40 preguntas)
-    ...Array.from({ length: 40 }, (_, i) => ({
-      id: `cg-${i + 1}`,
-      pregunta: [
-        "¿Cuál es la capital del departamento de Oruro en Bolivia?",
-        "¿En qué año se fundó Bolivia como república?",
-        "¿Quién fue el libertador de Bolivia?",
-        "¿Cuál es el lago navegable más alto del mundo?",
-        "¿Cuántos departamentos tiene Bolivia?",
-        "¿Cuál es la moneda oficial de Bolivia?",
-        "¿Qué país no limita con Bolivia?",
-        "¿Cuál es el cerro más rico de plata en la historia?",
-        "¿En qué año se nacionalizaron las minas en Bolivia?",
-        "¿Quién escribió 'Raza de Bronce'?",
-        "¿Cuál es el río más largo de Bolivia?",
-        "¿Qué cultivo es originario de Bolivia?",
-        "¿En qué departamento se encuentra el Salar de Uyuni?",
-        "¿Cuál es la ciudad más alta de Bolivia?",
-        "¿Qué idiomas son oficiales en Bolivia además del español?",
-        "¿En qué año Bolivia perdió su salida al mar?",
-        "¿Cuál es el símbolo químico del Sodio?",
-        "¿Qué tipo de ángulo mide exactamente 90 grados?",
-        "¿Cuál es el resultado de 15 × 8 + 32 - 18?",
-        "¿Cuál es la fórmula del agua?",
-        "¿Quién propuso la teoría de la relatividad?",
-        "¿Cuál es el planeta más grande del sistema solar?",
-        "¿Qué es la fotosíntesis?",
-        "¿Cuál es el organelo responsable de la producción de energía en la célula?",
-        "¿En qué año comenzó la Revolución Francesa?",
-        "¿Quién pintó la Mona Lisa?",
-        "¿Cuál es el elemento más abundante en la atmósfera?",
-        "¿Qué tipo de roca es el mármol?",
-        "¿Cuál es la velocidad de la luz?",
-        "¿Qué es el ADN?",
-        "¿Cuántos huesos tiene el cuerpo humano adulto?",
-        "¿Cuál es la capital de Francia?",
-        "¿Qué gas produce el efecto invernadero principalmente?",
-        "¿Cuál es el océano más grande?",
-        "¿Qué instrumento mide la presión atmosférica?",
-        "¿Cuál es la unidad de medida de la fuerza?",
-        "¿Qué vitamina produce el cuerpo con la luz solar?",
-        "¿Cuántos continentes hay en el mundo?",
-        "¿Qué país tiene más habitantes?",
-        "¿Cuál es el metal más conductor de electricidad?",
-      ][i % 40],
-      articulo: null,
-      tipo_de_pregunta: 3,
-      tiempo: 45,
-      categoria: "conocimientos_generales",
-      capacidad: "Cultura general",
-      opciones: [
-        ["Oruro", "Potosí", "Cochabamba", "Sucre"],
-        ["1825", "1809", "1810", "1830"],
-        [
-          "Simón Bolívar",
-          "Antonio José de Sucre",
-          "José de San Martín",
-          "Andrés de Santa Cruz",
-        ],
-        ["Lago Titicaca", "Lago Poopó", "Lago Victoria", "Lago Baikal"],
-        ["9", "10", "8", "7"],
-        ["Boliviano", "Peso", "Dólar", "Sol"],
-        ["Chile", "Brasil", "Argentina", "Paraguay"],
-        [
-          "Cerro Rico de Potosí",
-          "Cerro Illimani",
-          "Cerro Huayna Potosí",
-          "Cerro Sajama",
-        ],
-        ["1952", "1945", "1960", "1971"],
-        ["Alcides Arguedas", "Franz Tamayo", "Oscar Alfaro", "Adela Zamudio"],
-        ["Río Mamoré", "Río Beni", "Río Pilcomayo", "Río Paraguay"],
-        ["Papa", "Trigo", "Arroz", "Maíz"],
-        ["Potosí", "Oruro", "La Paz", "Tarija"],
-        ["El Alto", "La Paz", "Potosí", "Oruro"],
-        ["Quechua y Aymara", "Guaraní", "Todos los anteriores", "Solo Quechua"],
-        ["1879", "1880", "1883", "1904"],
-        ["Na", "So", "Sd", "No"],
-        ["Recto", "Agudo", "Obtuso", "Llano"],
-        ["134", "138", "142", "140"],
-        ["H2O", "CO2", "NaCl", "O2"],
-        [
-          "Albert Einstein",
-          "Isaac Newton",
-          "Galileo Galilei",
-          "Stephen Hawking",
-        ],
-        ["Júpiter", "Saturno", "Urano", "Neptuno"],
-        [
-          "Proceso de respiración celular",
-          "Conversión de luz en energía química",
-          "Producción de oxígeno sin luz",
-          "Digestión de nutrientes",
-        ],
-        ["Mitocondria", "Núcleo", "Ribosoma", "Lisosoma"],
-        ["1789", "1776", "1799", "1804"],
-        ["Leonardo da Vinci", "Miguel Ángel", "Rafael", "Van Gogh"],
-        ["Nitrógeno", "Oxígeno", "Argón", "CO2"],
-        ["Metamórfica", "Ígnea", "Sedimentaria", "Volcánica"],
-        ["300,000 km/s", "150,000 km/s", "500,000 km/s", "1,000,000 km/s"],
-        [
-          "Ácido desoxirribonucleico",
-          "Ácido ribonucleico",
-          "Proteína celular",
-          "Enzima digestiva",
-        ],
-        ["206", "208", "204", "210"],
-        ["París", "Londres", "Madrid", "Roma"],
-        ["CO2", "O2", "N2", "H2O"],
-        ["Pacífico", "Atlántico", "Índico", "Ártico"],
-        ["Barómetro", "Termómetro", "Higrómetro", "Anemómetro"],
-        ["Newton", "Julio", "Pascal", "Watt"],
-        ["Vitamina D", "Vitamina C", "Vitamina A", "Vitamina E"],
-        ["7", "5", "6", "8"],
-        ["China", "India", "Estados Unidos", "Indonesia"],
-        ["Plata", "Cobre", "Oro", "Aluminio"],
-      ][i % 40],
-      opcionesCompletas: [
-        ["Oruro", "Potosí", "Cochabamba", "Sucre"],
-        ["1825", "1809", "1810", "1830"],
-        [
-          "Simón Bolívar",
-          "Antonio José de Sucre",
-          "José de San Martín",
-          "Andrés de Santa Cruz",
-        ],
-        ["Lago Titicaca", "Lago Poopó", "Lago Victoria", "Lago Baikal"],
-        ["9", "10", "8", "7"],
-        ["Boliviano", "Peso", "Dólar", "Sol"],
-        ["Chile", "Brasil", "Argentina", "Paraguay"],
-        [
-          "Cerro Rico de Potosí",
-          "Cerro Illimani",
-          "Cerro Huayna Potosí",
-          "Cerro Sajama",
-        ],
-        ["1952", "1945", "1960", "1971"],
-        ["Alcides Arguedas", "Franz Tamayo", "Oscar Alfaro", "Adela Zamudio"],
-        ["Río Mamoré", "Río Beni", "Río Pilcomayo", "Río Paraguay"],
-        ["Papa", "Trigo", "Arroz", "Maíz"],
-        ["Potosí", "Oruro", "La Paz", "Tarija"],
-        ["El Alto", "La Paz", "Potosí", "Oruro"],
-        ["Quechua y Aymara", "Guaraní", "Todos los anteriores", "Solo Quechua"],
-        ["1879", "1880", "1883", "1904"],
-        ["Na", "So", "Sd", "No"],
-        ["Recto", "Agudo", "Obtuso", "Llano"],
-        ["134", "138", "142", "140"],
-        ["H2O", "CO2", "NaCl", "O2"],
-        [
-          "Albert Einstein",
-          "Isaac Newton",
-          "Galileo Galilei",
-          "Stephen Hawking",
-        ],
-        ["Júpiter", "Saturno", "Urano", "Neptuno"],
-        [
-          "Proceso de respiración celular",
-          "Conversión de luz en energía química",
-          "Producción de oxígeno sin luz",
-          "Digestión de nutrientes",
-        ],
-        ["Mitocondria", "Núcleo", "Ribosoma", "Lisosoma"],
-        ["1789", "1776", "1799", "1804"],
-        ["Leonardo da Vinci", "Miguel Ángel", "Rafael", "Van Gogh"],
-        ["Nitrógeno", "Oxígeno", "Argón", "CO2"],
-        ["Metamórfica", "Ígnea", "Sedimentaria", "Volcánica"],
-        ["300,000 km/s", "150,000 km/s", "500,000 km/s", "1,000,000 km/s"],
-        [
-          "Ácido desoxirribonucleico",
-          "Ácido ribonucleico",
-          "Proteína celular",
-          "Enzima digestiva",
-        ],
-        ["206", "208", "204", "210"],
-        ["París", "Londres", "Madrid", "Roma"],
-        ["CO2", "O2", "N2", "H2O"],
-        ["Pacífico", "Atlántico", "Índico", "Ártico"],
-        ["Barómetro", "Termómetro", "Higrómetro", "Anemómetro"],
-        ["Newton", "Julio", "Pascal", "Watt"],
-        ["Vitamina D", "Vitamina C", "Vitamina A", "Vitamina E"],
-        ["7", "5", "6", "8"],
-        ["China", "India", "Estados Unidos", "Indonesia"],
-        ["Plata", "Cobre", "Oro", "Aluminio"],
-      ][i % 40].map((opt, idx) => ({
-        id: `cg-${i + 1}-${idx + 1}`,
-        pregunta: opt,
-      })),
-      respuesta_correcta: null,
-    })),
-
-    // COMPRENSIÓN LECTORA (20 preguntas con artículo)
-    ...Array.from({ length: 20 }, (_, i) => ({
-      id: `cl-${i + 1}`,
-      pregunta: [
-        "Según el texto, ¿cuál es el tema principal?",
-        "¿Qué significa la palabra 'paradigma' en el contexto del texto?",
-        "¿Cuál es la idea central del segundo párrafo?",
-        "Según el autor, ¿cuál es la consecuencia principal?",
-        "¿Qué tipo de texto es el presentado?",
-        "¿Cuál es el propósito del autor al escribir este texto?",
-        "¿Qué relación existe entre los conceptos mencionados?",
-        "Según el texto, ¿qué factor es determinante?",
-        "¿Cuál es la conclusión del autor?",
-        "¿Qué evidencia presenta el texto para sustentar su argumento?",
-        "¿Cómo describe el autor la situación actual?",
-        "¿Qué solución propone el texto?",
-        "Según el contexto, ¿qué significa 'inherente'?",
-        "¿Cuál es el tono predominante del texto?",
-        "¿Qué ejemplo utiliza el autor?",
-        "¿Qué contraste presenta el texto?",
-        "Según el texto, ¿cuál es la causa del problema?",
-        "¿Qué inferencia se puede hacer del texto?",
-        "¿Cuál es el mensaje principal del autor?",
-        "¿Qué título sería más apropiado para el texto?",
-      ][i % 20],
-      articulo: `La educación en el siglo XXI enfrenta desafíos sin precedentes. La revolución tecnológica ha transformado no solo la manera en que accedemos a la información, sino también cómo la procesamos y utilizamos. En este contexto, las instituciones educativas deben replantear sus metodologías tradicionales.
-
-El paradigma educativo tradicional, basado en la transmisión unidireccional de conocimientos, resulta insuficiente para preparar a los estudiantes para un mundo en constante cambio. Se requiere un enfoque que fomente el pensamiento crítico, la creatividad y la capacidad de adaptación.
-
-La tecnología, lejos de ser un fin en sí misma, debe ser considerada como una herramienta que potencia el aprendizaje. Sin embargo, es fundamental que su implementación vaya acompañada de una reflexión pedagógica profunda que garantice su uso efectivo y significativo.
-
-En conclusión, la transformación educativa no es una opción, sino una necesidad imperativa. Solo mediante la innovación constante y la apertura al cambio podremos formar ciudadanos capaces de enfrentar los retos del futuro.`,
-      tipo_de_pregunta: 3,
-      tiempo: 90,
-      categoria: "comprension_lectora",
-      capacidad: "Comprensión de textos",
-      opciones: [
-        [
-          "La transformación educativa en la era digital",
-          "Historia de la educación",
-          "Crítica a la tecnología",
-          "Métodos de enseñanza obsoletos",
-        ],
-        [
-          "Modelo o patrón de referencia",
-          "Problema sin solución",
-          "Tecnología avanzada",
-          "Método científico",
-        ],
-        [
-          "La insuficiencia del modelo educativo tradicional",
-          "Los beneficios de la tecnología",
-          "La historia de la educación",
-          "Los problemas económicos",
-        ],
-        [
-          "La necesidad de transformación educativa",
-          "El aumento del desempleo",
-          "La reducción de costos",
-          "El cierre de escuelas",
-        ],
-        ["Argumentativo", "Narrativo", "Descriptivo", "Instructivo"],
-        [
-          "Reflexionar sobre la educación actual",
-          "Entretener al lector",
-          "Dar instrucciones",
-          "Contar una historia",
-        ],
-        ["Causa y efecto", "Oposición total", "Independencia", "Cronología"],
-        [
-          "La capacidad de adaptación",
-          "El dinero",
-          "La infraestructura",
-          "La cantidad de alumnos",
-        ],
-        [
-          "La transformación es necesaria",
-          "Todo debe permanecer igual",
-          "La tecnología es negativa",
-          "La educación es perfecta",
-        ],
-        [
-          "La revolución tecnológica como factor de cambio",
-          "Estadísticas numéricas",
-          "Testimonios personales",
-          "Experimentos científicos",
-        ],
-        [
-          "Como un momento de cambio y desafío",
-          "Como perfecta y sin problemas",
-          "Como irrelevante",
-          "Como terminada",
-        ],
-        [
-          "Innovación y apertura al cambio",
-          "Eliminar la tecnología",
-          "Volver al pasado",
-          "Ignorar los problemas",
-        ],
-        [
-          "Que es propio o esencial",
-          "Que es externo",
-          "Que es temporal",
-          "Que es superficial",
-        ],
-        [
-          "Reflexivo y propositivo",
-          "Irónico y burlesco",
-          "Agresivo y crítico",
-          "Indiferente y neutro",
-        ],
-        [
-          "La revolución tecnológica",
-          "Una historia personal",
-          "Un caso legal",
-          "Una receta de cocina",
-        ],
-        [
-          "Tradicional vs. moderno",
-          "Día vs. noche",
-          "Grande vs. pequeño",
-          "Caliente vs. frío",
-        ],
-        [
-          "Metodologías tradicionales inadecuadas",
-          "Falta de edificios",
-          "Exceso de estudiantes",
-          "Problemas económicos",
-        ],
-        [
-          "La educación debe evolucionar constantemente",
-          "Todo permanecerá igual",
-          "La tecnología es innecesaria",
-          "Los profesores son el problema",
-        ],
-        [
-          "Adaptar la educación a las nuevas realidades",
-          "Mantener todo igual",
-          "Eliminar las escuelas",
-          "Reducir el uso de tecnología",
-        ],
-        [
-          "Educación para el Futuro",
-          "La Historia Antigua",
-          "Problemas Sin Solución",
-          "El Fin de la Enseñanza",
-        ],
-      ][i % 20],
-      opcionesCompletas: [
-        [
-          "La transformación educativa en la era digital",
-          "Historia de la educación",
-          "Crítica a la tecnología",
-          "Métodos de enseñanza obsoletos",
-        ],
-        [
-          "Modelo o patrón de referencia",
-          "Problema sin solución",
-          "Tecnología avanzada",
-          "Método científico",
-        ],
-        [
-          "La insuficiencia del modelo educativo tradicional",
-          "Los beneficios de la tecnología",
-          "La historia de la educación",
-          "Los problemas económicos",
-        ],
-        [
-          "La necesidad de transformación educativa",
-          "El aumento del desempleo",
-          "La reducción de costos",
-          "El cierre de escuelas",
-        ],
-        ["Argumentativo", "Narrativo", "Descriptivo", "Instructivo"],
-        [
-          "Reflexionar sobre la educación actual",
-          "Entretener al lector",
-          "Dar instrucciones",
-          "Contar una historia",
-        ],
-        ["Causa y efecto", "Oposición total", "Independencia", "Cronología"],
-        [
-          "La capacidad de adaptación",
-          "El dinero",
-          "La infraestructura",
-          "La cantidad de alumnos",
-        ],
-        [
-          "La transformación es necesaria",
-          "Todo debe permanecer igual",
-          "La tecnología es negativa",
-          "La educación es perfecta",
-        ],
-        [
-          "La revolución tecnológica como factor de cambio",
-          "Estadísticas numéricas",
-          "Testimonios personales",
-          "Experimentos científicos",
-        ],
-        [
-          "Como un momento de cambio y desafío",
-          "Como perfecta y sin problemas",
-          "Como irrelevante",
-          "Como terminada",
-        ],
-        [
-          "Innovación y apertura al cambio",
-          "Eliminar la tecnología",
-          "Volver al pasado",
-          "Ignorar los problemas",
-        ],
-        [
-          "Que es propio o esencial",
-          "Que es externo",
-          "Que es temporal",
-          "Que es superficial",
-        ],
-        [
-          "Reflexivo y propositivo",
-          "Irónico y burlesco",
-          "Agresivo y crítico",
-          "Indiferente y neutro",
-        ],
-        [
-          "La revolución tecnológica",
-          "Una historia personal",
-          "Un caso legal",
-          "Una receta de cocina",
-        ],
-        [
-          "Tradicional vs. moderno",
-          "Día vs. noche",
-          "Grande vs. pequeño",
-          "Caliente vs. frío",
-        ],
-        [
-          "Metodologías tradicionales inadecuadas",
-          "Falta de edificios",
-          "Exceso de estudiantes",
-          "Problemas económicos",
-        ],
-        [
-          "La educación debe evolucionar constantemente",
-          "Todo permanecerá igual",
-          "La tecnología es innecesaria",
-          "Los profesores son el problema",
-        ],
-        [
-          "Adaptar la educación a las nuevas realidades",
-          "Mantener todo igual",
-          "Eliminar las escuelas",
-          "Reducir el uso de tecnología",
-        ],
-        [
-          "Educación para el Futuro",
-          "La Historia Antigua",
-          "Problemas Sin Solución",
-          "El Fin de la Enseñanza",
-        ],
-      ][i % 20].map((opt, idx) => ({
-        id: `cl-${i + 1}-${idx + 1}`,
-        pregunta: opt,
-      })),
-      respuesta_correcta: null,
-    })),
-
-    // SOCIO-EMOCIONAL (20 preguntas)
-    ...Array.from({ length: 20 }, (_, i) => ({
-      id: `se-${i + 1}`,
-      pregunta: [
-        "Cuando enfrento un problema difícil, generalmente:",
-        "Al trabajar en equipo, prefiero:",
-        "Cuando alguien critica mi trabajo, yo:",
-        "Ante una situación de estrés, suelo:",
-        "En un conflicto con un compañero, generalmente:",
-        "Cuando tengo que tomar una decisión importante:",
-        "Si cometo un error en público, yo:",
-        "Al conocer personas nuevas, me siento:",
-        "Cuando un amigo tiene un problema, yo:",
-        "Ante una tarea que no me gusta, yo:",
-        "Si alguien me interrumpe mientras hablo, yo:",
-        "Cuando logro una meta importante, yo:",
-        "Si tengo que hablar en público, yo:",
-        "Ante una injusticia, generalmente:",
-        "Cuando estoy en desacuerdo con la mayoría, yo:",
-        "Si un compañero necesita ayuda, yo:",
-        "Cuando enfrento el fracaso, yo:",
-        "En situaciones de presión, yo:",
-        "Cuando debo esperar resultados, yo:",
-        "Ante cambios inesperados, yo:",
-      ][i % 20],
-      articulo: null,
-      tipo_de_pregunta: 3,
-      tiempo: 30,
-      categoria: "socio_emocional",
-      capacidad: "Inteligencia emocional",
-      opciones: [
-        [
-          "Busco ayuda y diferentes perspectivas",
-          "Lo ignoro hasta que desaparezca",
-          "Me frustro inmediatamente",
-          "Culpo a otros",
-        ],
-        [
-          "Colaborar y escuchar a todos",
-          "Hacer todo yo mismo",
-          "Dejar que otros decidan",
-          "Evitar participar",
-        ],
-        [
-          "Escucho y reflexiono sobre la retroalimentación",
-          "Me ofendo inmediatamente",
-          "Ignoro completamente la crítica",
-          "Ataco a quien me crítica",
-        ],
-        [
-          "Buscar técnicas de relajación y organización",
-          "Evitar completamente la situación",
-          "Desquitarme con otros",
-          "Rendirme ante el problema",
-        ],
-        [
-          "Busco el diálogo y el entendimiento mutuo",
-          "Evito a la persona",
-          "Insisto en que tengo razón",
-          "Espero que otros resuelvan",
-        ],
-        [
-          "Analizo opciones y consulto si es necesario",
-          "Decido impulsivamente",
-          "Dejo que otros decidan",
-          "Postergo indefinidamente",
-        ],
-        [
-          "Lo reconozco y aprendo de ello",
-          "Culpo a las circunstancias",
-          "Me avergüenzo y me aíslo",
-          "Niego haberlo cometido",
-        ],
-        [
-          "Abierto a hacer nuevas conexiones",
-          "Muy incómodo y ansioso",
-          "Completamente indiferente",
-          "Superior a los demás",
-        ],
-        [
-          "Escucho activamente y ofrezco apoyo",
-          "Doy consejos sin escuchar",
-          "Cambio de tema",
-          "Me alejo del problema",
-        ],
-        [
-          "La completo con responsabilidad",
-          "La postergo indefinidamente",
-          "Hago el mínimo esfuerzo",
-          "La delego a otros",
-        ],
-        [
-          "Espero mi turno para continuar",
-          "Me molesto visiblemente",
-          "Dejo de hablar definitivamente",
-          "Interrumpo también",
-        ],
-        [
-          "Lo celebro y me siento orgulloso",
-          "Minimizo el logro",
-          "Lo presumo exageradamente",
-          "Lo ignoro completamente",
-        ],
-        [
-          "Me preparo y enfrento el reto",
-          "Evito la situación a toda costa",
-          "Me paralizo de nervios",
-          "Hablo sin preparación",
-        ],
-        [
-          "Expreso mi opinión respetuosamente",
-          "Me quedo callado siempre",
-          "Reacciono agresivamente",
-          "Acepto sin cuestionar",
-        ],
-        [
-          "Expreso mi punto de vista con respeto",
-          "Me conformo con la mayoría",
-          "Impongo mi opinión",
-          "Abandono la situación",
-        ],
-        [
-          "Ofrezco mi apoyo voluntariamente",
-          "Espero a que me pida ayuda",
-          "Ignoro su necesidad",
-          "Le digo que resuelva solo",
-        ],
-        [
-          "Lo veo como oportunidad de aprendizaje",
-          "Me rindo completamente",
-          "Culpo a los demás",
-          "Niego que haya fallado",
-        ],
-        [
-          "Mantengo la calma y me organizo",
-          "Entro en pánico",
-          "Me paralizo",
-          "Abandono la tarea",
-        ],
-        [
-          "Mantengo la calma y la paciencia",
-          "Me desespero constantemente",
-          "Olvido el asunto",
-          "Presiono para acelerar",
-        ],
-        [
-          "Me adapto y busco oportunidades",
-          "Me resisto al cambio",
-          "Me quejo constantemente",
-          "Ignoro lo que sucede",
-        ],
-      ][i % 20],
-      opcionesCompletas: [
-        [
-          "Busco ayuda y diferentes perspectivas",
-          "Lo ignoro hasta que desaparezca",
-          "Me frustro inmediatamente",
-          "Culpo a otros",
-        ],
-        [
-          "Colaborar y escuchar a todos",
-          "Hacer todo yo mismo",
-          "Dejar que otros decidan",
-          "Evitar participar",
-        ],
-        [
-          "Escucho y reflexiono sobre la retroalimentación",
-          "Me ofendo inmediatamente",
-          "Ignoro completamente la crítica",
-          "Ataco a quien me crítica",
-        ],
-        [
-          "Buscar técnicas de relajación y organización",
-          "Evitar completamente la situación",
-          "Desquitarme con otros",
-          "Rendirme ante el problema",
-        ],
-        [
-          "Busco el diálogo y el entendimiento mutuo",
-          "Evito a la persona",
-          "Insisto en que tengo razón",
-          "Espero que otros resuelvan",
-        ],
-        [
-          "Analizo opciones y consulto si es necesario",
-          "Decido impulsivamente",
-          "Dejo que otros decidan",
-          "Postergo indefinidamente",
-        ],
-        [
-          "Lo reconozco y aprendo de ello",
-          "Culpo a las circunstancias",
-          "Me avergüenzo y me aíslo",
-          "Niego haberlo cometido",
-        ],
-        [
-          "Abierto a hacer nuevas conexiones",
-          "Muy incómodo y ansioso",
-          "Completamente indiferente",
-          "Superior a los demás",
-        ],
-        [
-          "Escucho activamente y ofrezco apoyo",
-          "Doy consejos sin escuchar",
-          "Cambio de tema",
-          "Me alejo del problema",
-        ],
-        [
-          "La completo con responsabilidad",
-          "La postergo indefinidamente",
-          "Hago el mínimo esfuerzo",
-          "La delego a otros",
-        ],
-        [
-          "Espero mi turno para continuar",
-          "Me molesto visiblemente",
-          "Dejo de hablar definitivamente",
-          "Interrumpo también",
-        ],
-        [
-          "Lo celebro y me siento orgulloso",
-          "Minimizo el logro",
-          "Lo presumo exageradamente",
-          "Lo ignoro completamente",
-        ],
-        [
-          "Me preparo y enfrento el reto",
-          "Evito la situación a toda costa",
-          "Me paralizo de nervios",
-          "Hablo sin preparación",
-        ],
-        [
-          "Expreso mi opinión respetuosamente",
-          "Me quedo callado siempre",
-          "Reacciono agresivamente",
-          "Acepto sin cuestionar",
-        ],
-        [
-          "Expreso mi punto de vista con respeto",
-          "Me conformo con la mayoría",
-          "Impongo mi opinión",
-          "Abandono la situación",
-        ],
-        [
-          "Ofrezco mi apoyo voluntariamente",
-          "Espero a que me pida ayuda",
-          "Ignoro su necesidad",
-          "Le digo que resuelva solo",
-        ],
-        [
-          "Lo veo como oportunidad de aprendizaje",
-          "Me rindo completamente",
-          "Culpo a los demás",
-          "Niego que haya fallado",
-        ],
-        [
-          "Mantengo la calma y me organizo",
-          "Entro en pánico",
-          "Me paralizo",
-          "Abandono la tarea",
-        ],
-        [
-          "Mantengo la calma y la paciencia",
-          "Me desespero constantemente",
-          "Olvido el asunto",
-          "Presiono para acelerar",
-        ],
-        [
-          "Me adapto y busco oportunidades",
-          "Me resisto al cambio",
-          "Me quejo constantemente",
-          "Ignoro lo que sucede",
-        ],
-      ][i % 20].map((opt, idx) => ({
-        id: `se-${i + 1}-${idx + 1}`,
-        pregunta: opt,
-      })),
-      respuesta_correcta: null,
-    })),
-  ],
+  preguntas: transformarPreguntas(preguntasJson as PreguntaJson[]),
+  textos: transformarTextos(textosJson as TextoJson[]),
 };
+
+// Función helper para obtener un texto de lectura
+export function getTextoLectura(textoId: string): TextoLectura | undefined {
+  return EXAM_DATA.textos.find((t) => t.id === textoId);
+}
+
+// Función helper para obtener preguntas por categoría
+export function getPreguntasPorCategoria(categoria: string): Pregunta[] {
+  return EXAM_DATA.preguntas.filter((p) => p.categoria === categoria);
+}
+
+// Función helper para obtener preguntas de un texto de lectura
+export function getPreguntasPorTexto(textoId: string): Pregunta[] {
+  return EXAM_DATA.preguntas.filter((p) => p.texto_lectura_id === textoId);
+}

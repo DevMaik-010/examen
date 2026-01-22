@@ -11,12 +11,21 @@ import ThemeToggle from "@/components/ThemeToggle";
 // ============================================
 
 function PruebaContent() {
-  const { examInProgress, startExam, examData } = useExam();
+  const { examInProgress, startExam, examData, isRestored } = useExam();
   const router = useRouter();
   const [isInitializing, setIsInitializing] = useState(true);
 
   useEffect(() => {
     const initExam = async () => {
+      if (!isRestored) return;
+
+      // Verificar si el examen ya fue finalizado
+      const examStatus = localStorage.getItem("exam_status");
+      if (examStatus === "finalizado") {
+        router.push("https://admision01.dgfm.minedu.gob.bo/");
+        return;
+      }
+
       // Verificar si ya hay resultados guardados (examen ya completado)
       const examResults = localStorage.getItem("exam_results");
 
@@ -36,10 +45,10 @@ function PruebaContent() {
 
     initExam();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [isRestored]);
 
   // Mostrar loading mientras inicializa
-  if (isInitializing || !examData) {
+  if (!isRestored || isInitializing || !examData) {
     return (
       <div
         className="view-container"

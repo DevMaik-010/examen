@@ -1,6 +1,7 @@
 "use client";
 
 import { Pregunta } from "@/lib/data";
+import ReactMarkdown from "react-markdown";
 
 // ============================================
 // COMPONENTE: DISPLAY DE PREGUNTA
@@ -21,17 +22,20 @@ export function QuestionDisplay({
   return (
     <div className="question-display">
       {/* Indicador del tipo de pregunta */}
-      <div className="badge-info mb-6">◉ SELECCIÓN SIMPLE</div>
+      <div className="badge-info max-w-[210px] mb-6">◉ SELECCIÓN SIMPLE</div>
 
       {/* Mostrar artículo si existe (comprensión lectora) */}
       {question.articulo && (
         <div className="article-container mb-6">
           <div className="article-header">
             <span>📖</span> Artículo de Lectura
-            <span className="scroll-indicator">↕️ Desliza para leer</span>
+            <span className="scroll-indicator">↕️ Desliza para leer completo</span>
           </div>
           <div className="article-content custom-scrollbar">
-            {question.articulo}
+            {question.articulo_titulo && (
+              <h1 className="article-main-title">{question.articulo_titulo}</h1>
+            )}
+            <ReactMarkdown>{question.articulo}</ReactMarkdown>
           </div>
         </div>
       )}
@@ -105,14 +109,73 @@ export function QuestionDisplay({
           font-family: var(--font-fira-code), monospace;
         }
 
+        .article-main-title {
+          font-size: 2rem;
+          font-weight: 800;
+          color: var(--text-accent);
+          margin-bottom: 1.5rem;
+          padding-bottom: 1rem;
+          
+          text-align: start;
+        }
+
         .article-content {
           font-size: 1rem;
           line-height: 1.8;
           color: var(--text-primary);
-          max-height: 300px;
+          max-height: 400px;
           overflow-y: auto;
           padding-right: 1rem;
-          white-space: pre-wrap;
+        }
+
+        .article-content h1,
+        .article-content h2,
+        .article-content h3,
+        .article-content h4 {
+          color: var(--text-accent);
+          margin-top: 1.5rem;
+          margin-bottom: 0.75rem;
+          font-weight: 700;
+        }
+
+        .article-content h2 {
+          font-size: 1.25rem;
+          border-bottom: 1px solid var(--border-card);
+          padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+          font-size: 1.1rem;
+        }
+
+        .article-content h4 {
+          font-size: 1rem;
+        }
+
+        .article-content p {
+          margin-bottom: 1rem;
+        }
+
+        .article-content ul,
+        .article-content ol {
+          margin-left: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .article-content li {
+          margin-bottom: 0.5rem;
+        }
+
+        .article-content strong {
+          color: var(--text-accent);
+        }
+
+        .article-content code {
+          background: rgba(0, 255, 255, 0.1);
+          padding: 0.2rem 0.4rem;
+          border-radius: 4px;
+          font-family: var(--font-fira-code), monospace;
+          font-size: 0.9em;
         }
 
         .question-display {
