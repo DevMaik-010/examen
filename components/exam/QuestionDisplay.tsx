@@ -1,7 +1,7 @@
 "use client";
 
 import { Pregunta } from "@/lib/data";
-import ReactMarkdown from "react-markdown";
+import { MarkdownText } from "@/components/exam/MarkdownText";
 
 // ============================================
 // COMPONENTE: DISPLAY DE PREGUNTA
@@ -29,13 +29,12 @@ export function QuestionDisplay({
         <div className="article-container mb-6">
           <div className="article-header">
             <span>📖</span> Artículo de Lectura
-            <span className="scroll-indicator">↕️ Desliza para leer completo</span>
+            <span className="scroll-indicator">
+              ↕️ Desliza para leer completo
+            </span>
           </div>
           <div className="article-content custom-scrollbar">
-            {question.articulo_titulo && (
-              <h1 className="article-main-title">{question.articulo_titulo}</h1>
-            )}
-            <ReactMarkdown>{question.articulo}</ReactMarkdown>
+            <MarkdownText>{question.articulo}</MarkdownText>
           </div>
         </div>
       )}
@@ -115,7 +114,7 @@ export function QuestionDisplay({
           color: var(--text-accent);
           margin-bottom: 1.5rem;
           padding-bottom: 1rem;
-          
+
           text-align: start;
         }
 

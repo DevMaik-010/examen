@@ -17,17 +17,15 @@ export default function FinPage() {
     if (examStatus === "finalizado") {
       router.push("https://admision01.dgfm.minedu.gob.bo/");
       return;
-    }
-
-    // Limpiar datos del examen cuando se completa
-    localStorage.removeItem("exam_in_progress");
-    localStorage.removeItem("exam_current_index");
+    }    
   }, [router]);
 
   const handleLogout = () => {
     // Marcar examen como finalizado antes de limpiar
-    
+    // Limpiar datos del examen cuando se completa
     // Limpiar todo el localStorage y volver a la página principal
+    localStorage.removeItem("exam_in_progress");
+    localStorage.removeItem("exam_current_index");
     localStorage.clear();
     router.push("https://admision01.dgfm.minedu.gob.bo/");
     
