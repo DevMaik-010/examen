@@ -45,6 +45,7 @@ interface ExamContextType {
   goToQuestion: (index: number) => void;
   toggleFlag: (questionId: string) => void;
   isFlagged: (questionId: string) => boolean;
+  isVisited: (questionId: string) => boolean;
   finishExam: () => void;
   resetExam: () => void;
   getAnswer: (questionId: string) => string | undefined;
@@ -72,6 +73,9 @@ export function ExamProvider({ children }: { children: ReactNode }) {
   const [examInProgress, setExamInProgress] = useState(false);
   const [tiempoRestante, setTiempoRestante] = useState(EXAM_DATA.tiempo_total);
   const [isRestored, setIsRestored] = useState(false);
+  const [visitedQuestions, setVisitedQuestions] = useState<Set<string>>(
+    new Set(),
+  );
 
   // Timer countdown
   useEffect(() => {
@@ -102,6 +106,7 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     const savedStartTime = localStorage.getItem("exam_start_time");
     const savedInProgress = localStorage.getItem("exam_in_progress");
     const savedTiempo = localStorage.getItem("exam_tiempo_restante");
+    const savedVisited = localStorage.getItem("exam_visited_questions");
 
     if (savedAnswers) setUserAnswers(JSON.parse(savedAnswers));
     if (savedIndex) setCurrentQuestionIndex(parseInt(savedIndex, 10));
@@ -109,6 +114,7 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     if (savedStartTime) setExamStartTime(parseInt(savedStartTime, 10));
     if (savedInProgress === "true") setExamInProgress(true);
     if (savedTiempo) setTiempoRestante(parseInt(savedTiempo, 10));
+    if (savedVisited) setVisitedQuestions(new Set(JSON.parse(savedVisited)));
 
     setIsRestored(true);
   }, []);
@@ -142,6 +148,33 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("exam_tiempo_restante", tiempoRestante.toString());
   }, [tiempoRestante]);
 
+  // Guardar visited questions
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    localStorage.setItem(
+      "exam_visited_questions",
+      JSON.stringify([...visitedQuestions]),
+    );
+  }, [visitedQuestions]);
+
+  // Marcar pregunta actual como visitada
+  useEffect(() => {
+    if (!examInProgress) return;
+    const currentQuestionId = examData.preguntas[currentQuestionIndex]?.id;
+    if (currentQuestionId && !visitedQuestions.has(currentQuestionId)) {
+      setVisitedQuestions((prev) => {
+        const newSet = new Set(prev);
+        newSet.add(currentQuestionId);
+        return newSet;
+      });
+    }
+  }, [
+    currentQuestionIndex,
+    examInProgress,
+    examData.preguntas,
+    visitedQuestions,
+  ]);
+
   // Funciones
   const startExam = useCallback(() => {
     setCurrentQuestionIndex(0);
@@ -150,6 +183,7 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     setExamStartTime(Date.now());
     setExamInProgress(true);
     setTiempoRestante(examData.tiempo_total);
+    setVisitedQuestions(new Set());
 
     if (typeof window !== "undefined") {
       localStorage.setItem("exam_start_time", Date.now().toString());
@@ -209,6 +243,13 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     [flaggedQuestions],
   );
 
+  const isVisited = useCallback(
+    (questionId: string) => {
+      return visitedQuestions.has(questionId);
+    },
+    [visitedQuestions],
+  );
+
   const finishExam = useCallback(() => {
     setExamInProgress(false);
 
@@ -243,6 +284,7 @@ export function ExamProvider({ children }: { children: ReactNode }) {
       localStorage.removeItem("exam_in_progress");
       localStorage.removeItem("exam_results");
       localStorage.removeItem("exam_tiempo_restante");
+      localStorage.removeItem("exam_visited_questions");
     }
   }, [examData.tiempo_total]);
 
@@ -307,6 +349,7 @@ export function ExamProvider({ children }: { children: ReactNode }) {
     goToQuestion,
     toggleFlag,
     isFlagged,
+    isVisited,
     finishExam,
     resetExam,
     getAnswer,

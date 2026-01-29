@@ -79,7 +79,7 @@ export default function FinPage() {
             
           }
           .logout-btn:hover {
-            background: rgba(255, 107, 107, 0.15);
+            background: #572530;
           }
         `}</style>
       </div>

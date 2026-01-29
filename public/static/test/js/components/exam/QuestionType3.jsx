@@ -1,49 +1,29 @@
-"use client";
-
 import { useState, useRef, useEffect } from "react";
-import { Pregunta } from "@/lib/data";
-import { MarkdownText } from "@/components/exam/MarkdownText";
+import { LaTeXText } from "../common/LaTeXText";
+import { MarkdownText } from "../common/MarkdownText";
 
 // ============================================
-// COMPONENTE: DISPLAY DE PREGUNTA (TIPO 3)
-// Clonado fielmente de QuestionType3.jsx
+// COMPONENTE: PREGUNTA TIPO 3 - SELECCIÓN SIMPLE
 // COMPLETAMENTE ACCESIBLE PARA PERSONAS NO VIDENTES
 // ============================================
 
-interface QuestionDisplayProps {
-  question: Pregunta;
-  currentAnswer: string | undefined;
-  onAnswer: (answer: string) => void;
-}
-
-export function QuestionDisplay({
-  question,
-  currentAnswer,
-  onAnswer,
-}: QuestionDisplayProps) {
+export function QuestionType3({ question, currentAnswer, onAnswer }) {
   const [focusedIndex, setFocusedIndex] = useState(
     question.opciones.findIndex((opt) => opt === currentAnswer) || 0,
   );
   const [announcement, setAnnouncement] = useState("");
-  const optionsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const articleRef = useRef<HTMLDivElement>(null);
+  const optionsRef = useRef([]);
+  const articleRef = useRef(null);
 
   // Restablecer focus cuando cambia la pregunta
   useEffect(() => {
-
-
-    const act = async () => {
-      const selectedIndex = question.opciones.findIndex(
-        (opt) => opt === currentAnswer,
-      );
-      setFocusedIndex(selectedIndex >= 0 ? selectedIndex : 0);
-    };
-    
-    act();
-
+    const selectedIndex = question.opciones.findIndex(
+      (opt) => opt === currentAnswer,
+    );
+    setFocusedIndex(selectedIndex >= 0 ? selectedIndex : 0);
   }, [question.id, currentAnswer, question.opciones]);
 
-  const handleSelectOption = (option: string, index: number) => {
+  const handleSelectOption = (option, index) => {
     onAnswer(option);
     setFocusedIndex(index);
 
@@ -55,16 +35,17 @@ export function QuestionDisplay({
     setTimeout(() => setAnnouncement(""), 1000);
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent, index: number) => {
+  const handleKeyDown = (e, index) => {
     const optionsCount = question.opciones.length;
 
     switch (e.key) {
       case "ArrowDown":
       case "ArrowRight":
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // ✅ Prevenir propagación
         const nextIndex = (index + 1) % optionsCount;
         setFocusedIndex(nextIndex);
+        // Pequeño delay para asegurar que el focus se aplica correctamente
         setTimeout(() => {
           optionsRef.current[nextIndex]?.focus();
         }, 0);
@@ -73,9 +54,10 @@ export function QuestionDisplay({
       case "ArrowUp":
       case "ArrowLeft":
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // ✅ Prevenir propagación
         const prevIndex = (index - 1 + optionsCount) % optionsCount;
         setFocusedIndex(prevIndex);
+        // Pequeño delay para asegurar que el focus se aplica correctamente
         setTimeout(() => {
           optionsRef.current[prevIndex]?.focus();
         }, 0);
@@ -84,7 +66,7 @@ export function QuestionDisplay({
       case " ":
       case "Enter":
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // ✅ Prevenir propagación
         handleSelectOption(question.opciones[index], index);
         break;
 
@@ -93,7 +75,7 @@ export function QuestionDisplay({
       case "3":
       case "4":
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // ✅ Prevenir propagación
         const numIndex = parseInt(e.key) - 1;
         if (numIndex < optionsCount) {
           handleSelectOption(question.opciones[numIndex], numIndex);
@@ -108,7 +90,7 @@ export function QuestionDisplay({
       case "c":
       case "d":
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // ✅ Prevenir propagación
         const letterIndex = e.key.charCodeAt(0) - 97;
         if (letterIndex < optionsCount) {
           handleSelectOption(question.opciones[letterIndex], letterIndex);
@@ -120,7 +102,7 @@ export function QuestionDisplay({
 
       case "Home":
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // ✅ Prevenir propagación
         setFocusedIndex(0);
         setTimeout(() => {
           optionsRef.current[0]?.focus();
@@ -129,7 +111,7 @@ export function QuestionDisplay({
 
       case "End":
         e.preventDefault();
-        e.stopPropagation();
+        e.stopPropagation(); // ✅ Prevenir propagación
         const lastIndex = optionsCount - 1;
         setFocusedIndex(lastIndex);
         setTimeout(() => {
@@ -138,6 +120,7 @@ export function QuestionDisplay({
         break;
 
       default:
+        // No hacer nada para otras teclas
         break;
     }
   };
@@ -158,9 +141,6 @@ export function QuestionDisplay({
         {announcement}
       </div>
 
-      {/* Indicador del tipo de pregunta */}
-      <div className="badge-info max-w-[210px] mb-6">◉ SELECCIÓN SIMPLE</div>
-
       {/* Mostrar artículo si existe (comprensión lectora) */}
       {question.articulo && (
         <section className="article-container" aria-labelledby="article-title">
@@ -178,10 +158,10 @@ export function QuestionDisplay({
 
           <div
             ref={articleRef}
-            className="article-content custom-scrollbar"
-            tabIndex={0}
+            className="article-content"
+            tabIndex="0"
             role="article"
-            aria-label="Artículo completo. Use las flechas del teclado para desplazarse."
+            aria-label={`Artículo completo. Use las flechas del teclado para desplazarse.`}
           >
             <MarkdownText>{question.articulo}</MarkdownText>
           </div>
@@ -197,8 +177,8 @@ export function QuestionDisplay({
       )}
 
       {/* Pregunta */}
-      <div className="question-text" role="heading" aria-level={2} tabIndex={0}>
-        <p className="texto text-lg leading-relaxed">{question.pregunta}</p>
+      <div className="question-text" role="heading" aria-level="2" tabIndex="0">
+        <LaTeXText>{question.pregunta}</LaTeXText>
       </div>
 
       {/* Instrucciones */}
@@ -230,9 +210,7 @@ export function QuestionDisplay({
           return (
             <div
               key={index}
-              ref={(el) => {
-                optionsRef.current[index] = el;
-              }}
+              ref={(el) => (optionsRef.current[index] = el)}
               className={`option-item ${isSelected ? "selected" : ""} ${isFocused ? "focused" : ""}`}
               role="radio"
               aria-checked={isSelected}
@@ -241,24 +219,20 @@ export function QuestionDisplay({
               onClick={() => handleSelectOption(option, index)}
               onKeyDown={(e) => handleKeyDown(e, index)}
             >
-              {/* Radio visual - CSS based circle */}
-              <div
-                className={`option-radio ${isSelected ? "option-radio-selected" : ""}`}
-                aria-hidden="true"
-              >
-                {isSelected && <div className="option-radio-dot" />}
-              </div>
+              {/* Radio visual */}
+              <span className="option-radio" aria-hidden="true">
+                {isSelected ? "⦿" : "○"}
+              </span>
 
               {/* Letra de la opción */}
-              <span
-                className={`option-letter ${isSelected ? "option-letter-selected" : ""}`}
-                aria-hidden="true"
-              >
+              <span className="option-letter" aria-hidden="true">
                 {optionLetter}
               </span>
 
               {/* Texto de la opción */}
-              <span className="option-text texto">{option}</span>
+              <span className="option-text">
+                <LaTeXText>{option}</LaTeXText>
+              </span>
 
               {/* Estado para lectores de pantalla */}
               <span className="sr-only">
@@ -277,7 +251,7 @@ export function QuestionDisplay({
           : "No hay respuesta seleccionada"}
       </div>
 
-      <style jsx>{`
+      <style>{`
         /* Clase para contenido solo visible para lectores de pantalla */
         .sr-only {
           position: absolute;
@@ -294,18 +268,6 @@ export function QuestionDisplay({
         .question-type-3 {
           width: 100%;
           position: relative;
-          animation: slideIn 0.3s ease-out;
-        }
-
-        @keyframes slideIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
         }
 
         .article-container {
@@ -323,7 +285,7 @@ export function QuestionDisplay({
           margin: 0 0 1rem 0;
           padding-bottom: 0.5rem;
           border-bottom: 2px solid var(--border-card);
-          font-family: var(--font-orbitron), sans-serif;
+          font-family: 'Orbitron', sans-serif;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -334,18 +296,17 @@ export function QuestionDisplay({
         .scroll-indicator {
           font-size: 0.85rem;
           font-weight: 500;
-          color: #0099ff;
+          color: #0099ffff;
           background: rgba(0, 255, 255, 0.1);
           padding: 0.25rem 0.75rem;
           border-radius: 20px;
           border: 1px solid rgba(0, 255, 255, 0.3);
-          font-family: var(--font-fira-code), monospace;
+          font-family: 'Fira Code', monospace;
           animation: pulse-scroll 2s ease-in-out infinite;
         }
 
         @keyframes pulse-scroll {
-          0%,
-          100% {
+          0%, 100% {
             opacity: 1;
             transform: translateY(0);
           }
@@ -367,11 +328,13 @@ export function QuestionDisplay({
           position: relative;
         }
 
+        /* Focus visible en el artículo */
         .article-content:focus {
           outline: 3px solid var(--text-accent);
           outline-offset: 2px;
         }
 
+        /* Scrollbar mejorado */
         .article-content::-webkit-scrollbar {
           width: 14px;
         }
@@ -397,11 +360,7 @@ export function QuestionDisplay({
 
         .article-divider {
           height: 2px;
-          background: linear-gradient(
-            to right,
-            var(--text-accent),
-            transparent
-          );
+          background: linear-gradient(to right, var(--primary), transparent);
           margin-top: 1rem;
         }
 
@@ -439,7 +398,7 @@ export function QuestionDisplay({
           align-items: center;
           gap: 1rem;
           padding: 1.2rem 1.5rem;
-          font-family: var(--font-fira-code), monospace;
+          font-family: 'Fira Code', monospace;
           font-size: 1rem;
           border: 2px solid var(--border-input);
           border-radius: 10px;
@@ -451,6 +410,7 @@ export function QuestionDisplay({
           overflow: hidden;
         }
 
+        /* Focus visible muy claro */
         .option-item:focus {
           outline: 3px solid var(--text-accent);
           outline-offset: 3px;
@@ -463,18 +423,13 @@ export function QuestionDisplay({
         }
 
         .option-item::before {
-          content: "";
+          content: '';
           position: absolute;
           top: 0;
           left: -100%;
           width: 100%;
           height: 100%;
-          background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(255, 255, 255, 0.05),
-            transparent
-          );
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
           transition: left 0.5s;
         }
 
@@ -489,42 +444,11 @@ export function QuestionDisplay({
         }
 
         .option-radio {
-          width: 24px;
-          height: 24px;
-          min-width: 24px;
-          border: 3px solid var(--text-accent);
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease;
-          box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
-        }
-
-        .option-radio-selected {
-          border-color: var(--text-accent);
-          background: rgba(0, 255, 255, 0.1);
-          box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-        }
-
-        .option-radio-dot {
-          width: 10px;
-          height: 10px;
-          background: var(--text-accent);
-          border-radius: 50%;
-          animation: popIn 0.2s ease-out;
-        }
-
-        @keyframes popIn {
-          0% {
-            transform: scale(0);
-          }
-          50% {
-            transform: scale(1.3);
-          }
-          100% {
-            transform: scale(1);
-          }
+          font-size: 2rem;
+          min-width: 30px;
+          text-align: center;
+          color: var(--text-accent);
+          line-height: 1;
         }
 
         .option-letter {
@@ -536,12 +460,6 @@ export function QuestionDisplay({
           background: rgba(0, 255, 255, 0.1);
           border-radius: 6px;
           padding: 0.25rem 0.5rem;
-          transition: all 0.3s ease;
-        }
-
-        .option-letter-selected {
-          background: var(--text-accent);
-          color: var(--bg-card);
         }
 
         .option-text {
@@ -553,23 +471,33 @@ export function QuestionDisplay({
           background: linear-gradient(
             135deg,
             var(--bg-badge),
-            rgba(0, 255, 255, 0.15)
+            rgba(var(--text-accent-rgb), 0.15)
           );
           border-color: var(--text-accent);
           border-width: 3px;
-          box-shadow:
+          box-shadow: 
             0 0 25px rgba(0, 255, 255, 0.3),
             inset 0 0 20px rgba(0, 255, 255, 0.1);
           transform: translateX(8px) scale(1.02);
         }
 
+        [data-theme="light"] .option-item.selected {
+          box-shadow: 
+            0 0 25px rgba(37, 99, 235, 0.3),
+            inset 0 0 20px rgba(37, 99, 235, 0.1);
+        }
+
         .option-item.selected .option-radio {
-          transform: scale(1.1);
+          animation: pulse-radio 1s ease-in-out;
+        }
+
+        .option-item.selected .option-letter {
+          background: var(--text-accent);
+          color: var(--bg-card);
         }
 
         @keyframes pulse-radio {
-          0%,
-          100% {
+          0%, 100% {
             transform: scale(1);
           }
           50% {
@@ -631,7 +559,7 @@ export function QuestionDisplay({
           .option-item:focus {
             outline-width: 4px;
           }
-
+          
           .article-content:focus,
           .question-text:focus {
             outline-width: 4px;

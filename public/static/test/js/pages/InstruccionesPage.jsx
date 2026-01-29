@@ -1,76 +1,33 @@
-"use client";
-
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import ThemeToggle from "@/components/ThemeToggle";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
+import { useExam } from "../hooks/useExam";
+import { LogoutButton } from "../components/layout/LogoutButton";
+import { StatusBadge } from "../components/layout/StatusBadge";
 
 // ============================================
 // PÁGINA: INSTRUCCIONES
 // ============================================
 
-interface CurrentUser {
-  username: string;
-  es_usuario_discapacidad_visual?: boolean;
-  completado?: number;
-}
-
 export default function InstruccionesPage() {
-  const router = useRouter();
+  const { currentUser } = useAuth();
+  const { examInProgress, startExam, resetExam, isLoadingExam } = useExam();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [hasResults, setHasResults] = useState(false);
-  const [examInProgress, setExamInProgress] = useState(false);
-  const [currentUser, setCurrentUser] = useState<CurrentUser | null>(null);
-  const [loadError, setLoadError] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [loadError, setLoadError] = useState(null);
 
-  // Verificar si hay resultados guardados y obtener usuario
+  // Verificar si hay resultados guardados
   useEffect(() => {
-    const checkStatus = () => {
-      // Verificar si el examen ya fue finalizado
-      const examStatus = localStorage.getItem("exam_status");
-      if (examStatus === "finalizado") {
-        router.push("https://admision01.dgfm.minedu.gob.bo/");
-        return;
-      }
-
-      const examResults = localStorage.getItem("exam_results");
-      const inProgress = localStorage.getItem("exam_in_progress") === "true";
-      const user = localStorage.getItem("exam_user");
-
-      if (examResults) {
-        setHasResults(true);
-      }
-      setExamInProgress(inProgress);
-
-      if (user) {
-        // Try to parse user data from localStorage
-        try {
-          const userData = JSON.parse(
-            localStorage.getItem("exam_user_data") || "{}",
-          );
-          setCurrentUser({
-            username: user,
-            es_usuario_discapacidad_visual:
-              userData.es_usuario_discapacidad_visual || false,
-            completado: userData.completado ?? 0,
-          });
-        } catch {
-          setCurrentUser({ username: user, completado: 0 });
-        }
-      }
-    };
-
-    checkStatus();
-  }, [router]);
-
-  const handleLogout = () => {
-    localStorage.removeItem("exam_user");
-    localStorage.removeItem("exam_user_data");
-    router.push("/login");
-  };
+    const examResults = localStorage.getItem("exam_results");
+    // Si viene redirigido con el estado examCompleted o ya tiene resultados, mostrar mensaje de finalizado
+    if (location.state?.examCompleted || examResults) {
+      setHasResults(true);
+    }
+  }, [location.state]);
 
   const handleStartExam = async () => {
     setLoadError(null);
-    setIsLoading(true);
 
     // Si hay un examen en progreso, preguntar si desea continuar o reiniciar
     if (examInProgress) {
@@ -79,43 +36,57 @@ export default function InstruccionesPage() {
       );
 
       if (!continueExam) {
-        // Reset exam
-        localStorage.removeItem("exam_results");
-        localStorage.removeItem("exam_current_index");
-        localStorage.removeItem("exam_user_answers");
-        localStorage.removeItem("exam_flagged_questions");
-        localStorage.removeItem("exam_start_time");
-        localStorage.removeItem("exam_in_progress");
-        localStorage.removeItem("exam_tiempo_restante");
-        localStorage.removeItem("exam_visited_questions");
+        resetExam();
       }
-      router.push("/prueba");
+      navigate("/prueba");
       return;
     }
 
-    // Navigate to exam
-    router.push("/prueba");
+    // Cargar examen desde API
+    const result = await startExam();
+
+    if (result.success) {
+      navigate("/prueba");
+    } else {
+      // Mostrar error pero permitir continuar con datos locales
+      setLoadError(result.error);
+      navigate("/prueba"); // Navegar de todas formas (usa datos locales)
+    }
   };
 
+  // const handleViewResults = () => {
+  //   navigate('/fin');
+  // };
 
-  // Calculate time based on user disability
-  const totalMinutes = currentUser?.es_usuario_discapacidad_visual ? 180 : 120;
+  // eslint-disable-next-line no-unused-vars
+  const handleRetakeExam = () => {
+    const confirm = window.confirm(
+      "¿Estás seguro de que deseas volver a realizar la prueba? Esto eliminará tus resultados anteriores.",
+    );
+
+    if (confirm) {
+      // Limpiar resultados y estado
+      localStorage.removeItem("exam_results");
+      resetExam();
+      setHasResults(false);
+      navigate("/prueba");
+    }
+  };
 
   return (
     <div className="view-container">
       <div className="card">
-        {/* Botón Cerrar Sesión */}
-        <button onClick={handleLogout} className="logout-btn">
-          🚪 Cerrar Sesión
-        </button>
+        <LogoutButton />
 
-        <div className="status-badge">
+        <StatusBadge>
           {hasResults
             ? "✓ Completado"
             : examInProgress
               ? "⏸️ En Progreso"
               : "📋 Instrucciones"}
-        </div>
+        </StatusBadge>
+
+        {/* <h2>ESFM</h2> */}
 
         {/* Información del usuario */}
         {currentUser && (
@@ -131,12 +102,30 @@ export default function InstruccionesPage() {
             <p style={{ marginBottom: "0.5rem" }}>
               <strong>👤 Usuario:</strong> {currentUser.username}
             </p>
+            {/* <p style={{ marginBottom: '0.5rem' }}>
+              <strong>📧 Email:</strong> {currentUser.email}
+            </p> */}
+            {/* <p style={{ marginBottom: 0 }}>
+              <strong>🎭 Rol:</strong>
+              <span style={{
+                marginLeft: '0.5rem',
+                padding: '0.25rem 0.75rem',
+                background: 'rgba(0, 255, 255, 0.2)',
+                borderRadius: '12px',
+                fontSize: '0.85rem',
+                textTransform: 'uppercase',
+                fontWeight: 'bold'
+              }}>
+                {currentUser.role}
+              </span>
+            </p> */}
           </div>
         )}
 
+        {/* <p><strong>Tema:</strong> {examData?.tema || 'Cargando...'}</p> */}
         <div className="tech-line"></div>
 
-        <main tabIndex={-1} style={{ marginBottom: "2rem" }}>
+        <main tabindex="-1" style={{ marginBottom: "2rem" }}>
           <h3
             style={{
               color: "#32bbbbff",
@@ -164,7 +153,12 @@ export default function InstruccionesPage() {
               <span style={{ position: "absolute", left: 0, color: "#00ffff" }}>
                 ▸
               </span>
-              Tienes un <strong>tiempo total {totalMinutes} minutos</strong>{" "}
+              Tienes un{" "}
+              <strong>
+                tiempo total{" "}
+                {currentUser.es_usuario_discapacidad_visual ? "180" : "120"}{" "}
+                minutos
+              </strong>{" "}
               para completar toda la prueba
             </li>
             <li
@@ -190,8 +184,7 @@ export default function InstruccionesPage() {
               <span style={{ position: "absolute", left: 0, color: "#00ffff" }}>
                 ▸
               </span>
-              Una vez iniciada la prueba, no está permitido cerrar la pestaña o
-              la ventana del navegador, así como apagar el ordenador.
+              Una vez iniciada la prueba, no está permitido cerrar la pestaña o la ventana del navegador, así como apagar el ordenador.
             </li>
             <li
               style={{
@@ -258,6 +251,10 @@ export default function InstruccionesPage() {
               🚩 Tienes la opción de marcar una pregunta en caso de no estar
               seguro de tu respuesta
             </li>
+            {/* <li style={{ marginBottom: '0.8rem', paddingLeft: '1.5rem', position: 'relative' }}>
+              <span style={{ position: 'absolute', left: 0, color: '#00ffff' }}>▸</span>
+              Total de preguntas: <strong>{examData?.preguntas?.length || 0}</strong>
+            </li> */}
             <li
               style={{
                 marginBottom: "0.8rem",
@@ -280,8 +277,7 @@ export default function InstruccionesPage() {
               <span style={{ position: "absolute", left: 0, color: "#00ffff" }}>
                 ▸
               </span>
-              No olvides que tu prueba no será considerada si no presionas el
-              botón &quot;Finalizar Prueba&quot;
+              No olvides que tu prueba no será considerada si  no presionas el botón "Finalizar Prueba"
             </li>
           </ul>
         </main>
@@ -334,7 +330,26 @@ export default function InstruccionesPage() {
             </div>
 
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-              {/* Buttons can be added here if needed */}
+              {/*
+              <button
+                className="btn"
+                onClick={handleViewResults}
+                style={{ flex: '1', minWidth: '200px' }}
+              >
+                Ver Resultados
+              </button>
+               <button
+                className="btn"
+                onClick={handleRetakeExam}
+                style={{
+                  flex: '1',
+                  minWidth: '200px',
+                  background: 'rgba(255, 100, 100, 0.2)',
+                  borderColor: '#ff6b6b'
+                }}
+              >
+                Volver a Realizar
+              </button> */}
             </div>
           </div>
         ) : (
@@ -370,61 +385,28 @@ export default function InstruccionesPage() {
                 </p>
               </div>
             )}
-            {/* Mostrar botón si completado es 0 */}
-            {(currentUser?.completado === 0 ||
-              currentUser?.completado === undefined) && (
+            {/* mostrar boton si completado es 0 */}
+            {currentUser?.completado === 0 && (
               <button
-                className="btn  max-w-[250px]"
+                className="btn"
                 onClick={handleStartExam}
-                disabled={isLoading}
+                disabled={isLoadingExam}
               >
-                {isLoading
+                {isLoadingExam
                   ? "Cargando prueba..."
                   : examInProgress
                     ? "Continuar Prueba"
                     : "Iniciar Prueba"}
               </button>
             )}
+            {/* {currentUser?.completado} */}
 
             {currentUser?.completado === 2 && (
               <h3>¡Ya terminaste tu prueba!</h3>
             )}
           </>
         )}
-
-        <style jsx>{`
-          .status-badge {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: rgba(0, 255, 255, 0.1);
-            border: 1px solid rgba(0, 255, 255, 0.3);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--text-accent);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-          }
-          .logout-btn {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            padding: 0.5rem 1rem;
-            background: var(--bg-error);
-            border: 0.7px solid #ff6b6b;
-            border-radius: 8px;
-            color: #ff6b6b;
-            font-size: 0.85rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-          }
-          .logout-btn:hover {
-            background: #572530;
-          }
-        `}</style>
       </div>
-      <ThemeToggle className="theme-toggle" />
     </div>
   );
 }

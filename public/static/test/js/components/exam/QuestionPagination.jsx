@@ -1,8 +1,5 @@
-"use client";
-
 import { useState, useRef, useEffect } from "react";
-import { useExam } from "@/context/ExamContext";
-import { Pregunta } from "@/lib/data";
+import { useExam } from "../../hooks/useExam";
 
 // ============================================
 // COMPONENTE: PAGINACIÓN DE PREGUNTAS CON SCROLL
@@ -20,7 +17,7 @@ export function QuestionPagination() {
   } = useExam();
 
   const [jumpValue, setJumpValue] = useState("");
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef(null);
 
   // Estados para drag-to-scroll
   const [isDragging, setIsDragging] = useState(false);
@@ -54,7 +51,7 @@ export function QuestionPagination() {
   const totalQuestions = examData.preguntas.length;
 
   // Drag-to-scroll handlers
-  const handleMouseDown = (e: React.MouseEvent) => {
+  const handleMouseDown = (e) => {
     if (!scrollContainerRef.current) return;
     setIsDragging(true);
     setHasDragged(false);
@@ -72,7 +69,7 @@ export function QuestionPagination() {
     setTimeout(() => setHasDragged(false), 100);
   };
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e) => {
     if (!isDragging || !scrollContainerRef.current) return;
     e.preventDefault();
     const x = e.pageX - scrollContainerRef.current.offsetLeft;
@@ -95,7 +92,7 @@ export function QuestionPagination() {
   };
 
   // Salto rápido
-  const handleJump = (e: React.FormEvent) => {
+  const handleJump = (e) => {
     e.preventDefault();
     const num = parseInt(jumpValue, 10);
     if (num >= 1 && num <= totalQuestions) {
@@ -105,7 +102,7 @@ export function QuestionPagination() {
   };
 
   // Obtener estado de una pregunta
-  const getQuestionState = (pregunta: Pregunta, index: number) => {
+  const getQuestionState = (pregunta, index) => {
     const isAnswered = getAnswer(pregunta.id) !== undefined;
     const isFlaggedQuestion = isFlagged(pregunta.id);
     const isCurrent = index === currentQuestionIndex;
@@ -139,7 +136,7 @@ export function QuestionPagination() {
         onMouseLeave={handleMouseLeave}
         role="list"
         aria-label="Lista de preguntas"
-        tabIndex={0}
+        tabIndex="0"
       >
         {examData.preguntas.map((pregunta, index) => {
           const state = getQuestionState(pregunta, index);
@@ -155,10 +152,13 @@ export function QuestionPagination() {
           const ariaLabel = `Pregunta ${index + 1} de ${totalQuestions}${statusParts.length > 0 ? ", " + statusParts.join(", ") : ""}`;
 
           return (
-            <li key={pregunta.id}>
-              <button
+            <li // <-- Nuevo elemento <li> con rol implícito o explícito
+              key={pregunta.id}
+              // role="listitem"
+            >
+              <button // <-- Ahora el botón está DENTRO del listitem
                 className={state.className}
-                onClick={() => {
+                onClick={(e) => {
                   if (!hasDragged) {
                     goToQuestion(index);
                   }
@@ -166,6 +166,7 @@ export function QuestionPagination() {
                 aria-label={ariaLabel}
                 aria-current={state.isCurrent ? "step" : undefined}
               >
+                {/* ... contenido del botón ... */}
                 <span aria-hidden={state.isCurrent}>{index + 1}</span>
                 {state.isCurrent && (
                   <span className="sr-only">Pregunta actual</span>

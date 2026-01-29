@@ -40,6 +40,11 @@
   --toggle-shadow-hover: rgba(0, 255, 255, 0.4);
   --toggle-border-glow: rgba(0, 255, 255, 0.3);
   --toggle-border-glow-pulse: rgba(0, 255, 255, 0.15);
+  /* Timer colors */
+  --bg-timer: rgba(20, 25, 45, 0.9);
+  --timer-safe: #00ff88;
+  --timer-warning: #ffc107;
+  --timer-danger: #ff6b6b;
 }
 
 [data-theme="light"] {
@@ -73,6 +78,11 @@
   --particle-1: rgba(74, 144, 226, 0.03);
   --particle-2: rgba(37, 99, 235, 0.03);
   --particle-3: rgba(147, 51, 234, 0.02);
+  /* Timer colors - light theme */
+  --bg-timer: rgba(255, 255, 255, 0.95);
+  --timer-safe: #00cc66;
+  --timer-warning: #f59e0b;
+  --timer-danger: #dc2626;
 }
 
 [data-theme="light"] {
