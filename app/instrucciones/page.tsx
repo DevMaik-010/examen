@@ -74,21 +74,6 @@ export default function InstruccionesPage() {
 
     // Si hay un examen en progreso, preguntar si desea continuar o reiniciar
     if (examInProgress) {
-      const continueExam = window.confirm(
-        "¿Tienes una prueba en progreso. ¿Deseas continuar donde lo dejaste?",
-      );
-
-      if (!continueExam) {
-        // Reset exam
-        localStorage.removeItem("exam_results");
-        localStorage.removeItem("exam_current_index");
-        localStorage.removeItem("exam_user_answers");
-        localStorage.removeItem("exam_flagged_questions");
-        localStorage.removeItem("exam_start_time");
-        localStorage.removeItem("exam_in_progress");
-        localStorage.removeItem("exam_tiempo_restante");
-        localStorage.removeItem("exam_visited_questions");
-      }
       router.push("/prueba");
       return;
     }
